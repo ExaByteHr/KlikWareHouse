@@ -35,6 +35,6 @@ Thumbs.db
 /playwright/.cache/
 
 # Claude / Agents
-.claude/
-CLAUDE.md
-AGENTS.md
+#.claude/
+#CLAUDE.md
+#AGENTS.md
