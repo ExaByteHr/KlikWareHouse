@@ -21,7 +21,7 @@ class SetLocale
 {
     public const SUPPORTED_LOCALES = [
         'en', 'es', 'fr', 'de', 'pt-BR', 'it',
-        'ja', 'ko', 'zh-CN', 'ar', 'ru', 'nl', 'tr', 'pl',
+        'ja', 'ko', 'zh-CN', 'ar', 'ru', 'nl', 'tr', 'pl', 'hr',
     ];
 
     /**
