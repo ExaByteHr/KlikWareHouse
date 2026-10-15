@@ -89,19 +89,20 @@ if (typeof window !== 'undefined') {
             </div>
 
             <!-- Zoom Icon -->
-            <div class="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full cursor-pointer hover:bg-black/70 transition" @click="openLightbox(currentIndex)">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button class="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full cursor-pointer hover:bg-black/70 transition ds-focus-ring" @click="openLightbox(currentIndex)" :aria-label="t('common.view')">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                 </svg>
-            </div>
+            </button>
 
             <!-- Navigation Arrows (for multiple images) -->
             <button
                 v-if="hasMultipleImages"
                 @click="previousImage"
-                class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-black/70 transition"
+                class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-black/70 transition ds-focus-ring"
+                :aria-label="t('common.previous')"
             >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
@@ -109,9 +110,10 @@ if (typeof window !== 'undefined') {
             <button
                 v-if="hasMultipleImages"
                 @click="nextImage"
-                class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-black/70 transition"
+                class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-black/70 transition ds-focus-ring"
+                :aria-label="t('common.next')"
             >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -129,11 +131,12 @@ if (typeof window !== 'undefined') {
                 :key="index"
                 @click="selectImage(index)"
                 :class="[
-                    'relative aspect-square rounded-lg border-2 overflow-hidden transition cursor-pointer',
+                    'relative aspect-square rounded-lg border-2 overflow-hidden transition cursor-pointer ds-focus-ring',
                     currentIndex === index
                         ? 'border-brand ring-2 ring-brand'
                         : 'border-gray-200 dark:border-border-subtle hover:border-brand/50'
                 ]"
+                :aria-label="t('components.imageGallery.imageAlt', { name: productName, number: index + 1 })"
             >
                 <img
                     :src="image"
@@ -169,9 +172,10 @@ if (typeof window !== 'undefined') {
             <!-- Close Button -->
             <button
                 @click="closeLightbox"
-                class="absolute top-4 right-4 p-3 text-white hover:bg-white/10 rounded-full transition z-10"
+                class="absolute top-4 right-4 p-3 text-white hover:bg-white/10 rounded-full transition z-10 ds-focus-ring"
+                :aria-label="t('components.imageGallery.close')"
             >
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
@@ -185,9 +189,10 @@ if (typeof window !== 'undefined') {
             <button
                 v-if="hasMultipleImages"
                 @click.stop="previousImage"
-                class="absolute left-4 p-4 text-white hover:bg-white/10 rounded-full transition z-10"
+                class="absolute left-4 p-4 text-white hover:bg-white/10 rounded-full transition z-10 ds-focus-ring"
+                :aria-label="t('common.previous')"
             >
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
@@ -196,9 +201,10 @@ if (typeof window !== 'undefined') {
             <button
                 v-if="hasMultipleImages"
                 @click.stop="nextImage"
-                class="absolute right-4 p-4 text-white hover:bg-white/10 rounded-full transition z-10"
+                class="absolute right-4 p-4 text-white hover:bg-white/10 rounded-full transition z-10 ds-focus-ring"
+                :aria-label="t('common.next')"
             >
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
