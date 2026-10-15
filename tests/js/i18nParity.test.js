@@ -31,8 +31,8 @@ const pluralForms = (message) => message.split('|').length;
 const en = flatten(read('en.json'));
 const locales = readdirSync(localesDir).filter((f) => f.endsWith('.json') && f !== 'en.json');
 
-test('there are 13 non-English locales to check', () => {
-    assert.equal(locales.length, 13);
+test('there are 14 non-English locales to check', () => {
+    assert.equal(locales.length, 14);
 });
 
 for (const file of locales) {
