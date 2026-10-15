@@ -15,6 +15,7 @@ import ru from './locales/ru.json'
 import nl from './locales/nl.json'
 import tr from './locales/tr.json'
 import pl from './locales/pl.json'
+import hr from './locales/hr.json'
 
 // The server resolves the locale (the signed-in user's saved language, then
 // the `locale` cookie, then the app default) and renders it into <html lang>,
@@ -38,6 +39,7 @@ const i18n = createI18n({
         nl,
         tr,
         pl,
+        hr,
     },
 })
 
@@ -59,6 +61,7 @@ export const availableLocales = [
     { code: 'nl', name: 'Nederlands', flag: '\uD83C\uDDF3\uD83C\uDDF1' },
     { code: 'tr', name: 'T\u00fcrk\u00e7e', flag: '\uD83C\uDDF9\uD83C\uDDF7' },
     { code: 'pl', name: 'Polski', flag: '\uD83C\uDDF5\uD83C\uDDF1' },
+    { code: 'hr', name: 'Hrvatski', flag: '\uD83C\uDDED\uD83C\uDDF7' },
 ]
 
 /**
