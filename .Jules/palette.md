@@ -1,3 +1,3 @@
-## 2024-05-14 - Keyboard Access in Image Components
-**Learning:** Found that custom file upload areas (`div` elements) and zoom/navigation controls in `ImageGallery` lacked proper semantic tags (like `button`), missing ARIA labels, and had hidden controls on focus. Using `ds-focus-ring` with correct focus utilities like `focus-within` enables proper keyboard navigation without breaking visual designs.
-**Action:** Consistently replace clickable `div` elements with `button` tags with `aria-label`s, add `ds-focus-ring` to interactive elements, and consider adding keyboard shortcuts (`@keydown.enter`) with tabindex="0" and `role="button"` for custom clickable zones.
+## 2024-10-16 - Add ARIA label and focus styles to close button
+**Learning:** Found that an icon-only button in the BarcodeScannerModal lacked an `aria-label` and visual focus styles, causing poor accessibility for screen reader and keyboard users. Added `t('common.cancel')` and `ds-focus-ring` to fix this.
+**Action:** Always ensure icon-only buttons have an `aria-label` and `ds-focus-ring` applied, especially for modal close buttons.

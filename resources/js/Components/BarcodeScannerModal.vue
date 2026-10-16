@@ -131,7 +131,12 @@ const selectProduct = () => {
                         <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">
                             {{ t('stockAdjustments.create.scanBarcode') }}
                         </h3>
-                        <button @click="close" class="text-gray-400 hover:text-gray-500">
+                        <button
+                            type="button"
+                            @click="close"
+                            class="rounded-md p-1 text-gray-400 transition-colors hover:bg-surface-overlay hover:text-gray-500 ds-focus-ring"
+                            :aria-label="t('common.cancel')"
+                        >
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
