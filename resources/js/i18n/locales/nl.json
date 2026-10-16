@@ -1466,18 +1466,18 @@
       "marketplace": "Marktplaats"
     },
     "marketplace": {
-      "intro": "Plugins uit de Inventoros-marktplaats zijn ondertekend. Elke download wordt vóór installatie gecontroleerd met de marktplaatssleutel, ook wanneer ZIP-uploads zijn uitgeschakeld.",
-      "notConfigured": "Installaties vanuit de marktplaats zijn uitgeschakeld omdat er geen ondertekeningssleutel voor de marktplaats is geconfigureerd. Stel INVENTOROS_MARKETPLACE_PUBLIC_KEY in om ze in te schakelen.",
+      "intro": "Plugins uit de KlikWareHouse-marktplaats zijn ondertekend. Elke download wordt vóór installatie gecontroleerd met de marktplaatssleutel, ook wanneer ZIP-uploads zijn uitgeschakeld.",
+      "notConfigured": "Installaties vanuit de marktplaats zijn uitgeschakeld omdat er geen ondertekeningssleutel voor de marktplaats is geconfigureerd. Stel KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY in om ze in te schakelen.",
       "unavailable": "De marktplaats kon niet worden geladen.",
       "empty": "Er zijn nog geen plugins beschikbaar in de marktplaats.",
-      "account": "inventoros.com-account",
+      "account": "klikwarehouse.com-account",
       "connectedAs": "Verbonden als {name} ({email})",
-      "connectHint": "Betaalde plugins die u bezit, kunnen worden geïnstalleerd zodra u uw account koppelt. Maak een verbindingstoken voor de marktplaats aan op uw accountpagina op inventoros.com en plak het hier.",
+      "connectHint": "Betaalde plugins die u bezit, kunnen worden geïnstalleerd zodra u uw account koppelt. Maak een verbindingstoken voor de marktplaats aan op uw accountpagina op klikwarehouse.com en plak het hier.",
       "tokenLabel": "Verbindingstoken marktplaats",
       "connect": "Verbinden",
       "connecting": "Verbinden...",
       "disconnect": "Verbinding verbreken",
-      "confirmDisconnect": "Deze werkruimte loskoppelen van inventoros.com? Geïnstalleerde plugins blijven werken.",
+      "confirmDisconnect": "Deze werkruimte loskoppelen van klikwarehouse.com? Geïnstalleerde plugins blijven werken.",
       "free": "Gratis",
       "perMonth": "{price} per maand",
       "perYear": "{price} per jaar",
@@ -1488,9 +1488,9 @@
       "update": "Bijwerken naar {version}",
       "upToDate": "Up-to-date",
       "working": "Bezig...",
-      "needsPurchase": "Betaalde plugin. Schaf deze aan op inventoros.com en koppel daarna uw account om te installeren.",
+      "needsPurchase": "Betaalde plugin. Schaf deze aan op klikwarehouse.com en koppel daarna uw account om te installeren.",
       "notOwned": "Uw gekoppelde account bezit deze plugin nog niet.",
-      "viewOnMarketplace": "Bekijken op inventoros.com",
+      "viewOnMarketplace": "Bekijken op klikwarehouse.com",
       "readOnly": "U kunt de marktplaats bekijken. Voor het installeren van plugins is de machtiging Plugins beheren nodig."
     },
     "confirmDelete": "Weet u zeker dat u \"{name}\" wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros is al geïnstalleerd.",
+      "alreadyInstalled": "KlikWareHouse is al geïnstalleerd.",
       "connectionSuccessful": "Verbinding met de database geslaagd.",
       "connectionFailed": "Verbinding met de database mislukt: {error}",
       "databaseInstalled": "Database geïnstalleerd.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "Beheerdersaccount aangemaakt."
     },
     "welcome": {
-      "title": "Welkom bij Inventoros",
+      "title": "Welkom bij KlikWareHouse",
       "subtitle": "Voorraadbeheer voor iedereen",
       "wizard": "Installatiewizard",
-      "description": "Bedankt voor het kiezen van Inventoros! Deze installatiewizard begeleidt u door het installatieproces.",
+      "description": "Bedankt voor het kiezen van KlikWareHouse! Deze installatiewizard begeleidt u door het installatieproces.",
       "includes": "Het installatieproces omvat",
       "step1": "Systeemvereisten controleren",
       "step1Desc": "Controleren of uw server aan alle vereisten voldoet",
@@ -2407,7 +2407,7 @@
       "step3": "Beheerdersaccount aanmaken",
       "step3Desc": "Uw organisatie en beheerdersgebruiker aanmaken",
       "step4": "Installatie voltooien",
-      "step4Desc": "Installatie afronden en beginnen met Inventoros",
+      "step4Desc": "Installatie afronden en beginnen met KlikWareHouse",
       "beforeBegin": "Voordat u begint",
       "beforeBeginDesc": "Zorg ervoor dat PHP 8.2+, MySQL/PostgreSQL en de vereiste PHP-extensies zijn geïnstalleerd.",
       "startInstallation": "Installatie starten",
@@ -2417,7 +2417,7 @@
       "title": "Systeemvereisten",
       "subtitle": "Uw serverconfiguratie controleren",
       "allMet": "Aan alle vereisten voldaan!",
-      "allMetDesc": "Uw server voldoet aan alle vereisten om Inventoros uit te voeren.",
+      "allMetDesc": "Uw server voldoet aan alle vereisten om KlikWareHouse uit te voeren.",
       "notMet": "Niet aan alle vereisten voldaan",
       "notMetDesc": "Los onderstaande problemen op voordat u verdergaat.",
       "current": "Huidig",
@@ -2443,7 +2443,7 @@
       "testing": "Verbinding testen...",
       "dbExistsHint": "Zorg ervoor dat uw database bestaat voordat u verdergaat. Het installatieprogramma maakt de benodigde tabellen aan.",
       "resetTitle": "Deze database bevat tabellen van een onvoltooide installatie",
-      "resetWarning": "Resetten verwijdert alle tabellen in deze database, ook tabellen die niet bij Inventoros horen, en installeert daarna opnieuw. Ga alleen verder als deze database uitsluitend voor Inventoros wordt gebruikt.",
+      "resetWarning": "Resetten verwijdert alle tabellen in deze database, ook tabellen die niet bij KlikWareHouse horen, en installeert daarna opnieuw. Ga alleen verder als deze database uitsluitend voor KlikWareHouse wordt gebruikt.",
       "resetConfirm": "Ik begrijp dat alle tabellen in deze database worden verwijderd",
       "resetAndInstall": "Database resetten en installeren",
       "installDatabase": "Database installeren",
@@ -2463,7 +2463,7 @@
       "passwordHint": "Minimaal 8 tekens",
       "confirmPassword": "Wachtwoord bevestigen",
       "confirmPasswordHint": "Bevestig uw wachtwoord",
-      "accessNote": "Dit beheerdersaccount heeft volledige toegang tot uw Inventoros-installatie.",
+      "accessNote": "Dit beheerdersaccount heeft volledige toegang tot uw KlikWareHouse-installatie.",
       "completeInstallation": "Installatie voltooien",
       "creatingAccount": "Account aanmaken...",
       "orgNamePlaceholder": "Acme B.V.",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "Installatie voltooid!",
-      "description": "Inventoros is succesvol geïnstalleerd en geconfigureerd.",
+      "description": "KlikWareHouse is succesvol geïnstalleerd en geconfigureerd.",
       "whatsNext": "Wat nu?",
       "step1": "Log in met uw beheerdersaccount",
       "step2": "Stel uw productcategorieën en locaties in",
@@ -2483,7 +2483,7 @@
       "community": "Communitydiscussies",
       "issues": "Problemen melden",
       "goToLogin": "Naar inloggen",
-      "thankYou": "Bedankt voor het kiezen van Inventoros!"
+      "thankYou": "Bedankt voor het kiezen van KlikWareHouse!"
     }
   },
   "errors": {

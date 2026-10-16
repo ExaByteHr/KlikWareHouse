@@ -101,7 +101,7 @@ onMounted(() => window.addEventListener('keydown', handleHotkey));
 const user = computed(() => page.props.auth?.user);
 // Requests waiting for this user's decision, shown on the Approvals item.
 const pendingApprovalsCount = computed(() => Number(page.props.pendingApprovalsCount || 0));
-const workspaceName = computed(() => page.props.auth?.organization?.name || 'Inventoros');
+const workspaceName = computed(() => page.props.auth?.organization?.name || 'KlikWareHouse');
 
 /**
  * Nav schema. Each section is { id, label, items: [{ icon, name, href, active, perm? }] }.
@@ -220,7 +220,7 @@ const isActive = (item) => item.active.some((pattern) => route().current(pattern
         <!-- Mobile top bar -->
         <div class="md:hidden fixed top-0 inset-x-0 z-40 h-12 flex items-center justify-between px-4 bg-surface-base border-b border-border-subtle">
             <Link :href="route('dashboard')" class="flex items-center gap-2">
-                <img src="/images/brand/inventoros_icon_transparent_512.png" alt="Inventoros" class="h-7 w-7 shrink-0" />
+                <img src="/images/brand/inventoros_icon_transparent_512.png" alt="KlikWareHouse" class="h-7 w-7 shrink-0" />
                 <span class="text-sm font-semibold tracking-tight">{{ workspaceName }}</span>
             </Link>
             <button
@@ -257,7 +257,7 @@ const isActive = (item) => item.active.some((pattern) => route().current(pattern
                     :href="route('dashboard')"
                     class="flex items-center gap-2.5 w-full px-2 py-1.5 rounded-md hover:bg-surface-overlay transition-colors ds-focus-ring"
                 >
-                    <img src="/images/brand/inventoros_icon_transparent_512.png" alt="Inventoros" class="h-7 w-7 shrink-0" />
+                    <img src="/images/brand/inventoros_icon_transparent_512.png" alt="KlikWareHouse" class="h-7 w-7 shrink-0" />
                     <span class="text-sm font-semibold tracking-tight truncate flex-1 text-left">
                         {{ workspaceName }}
                     </span>

@@ -15,7 +15,7 @@
  *         plugin.registerSlotComponent('dashboard:header', Banner);
  *     }
  *
- * or calls the same functions on `window.Inventoros` directly.
+ * or calls the same functions on `window.KlikWareHouse` directly.
  */
 import * as Vue from 'vue';
 import { defineAsyncComponent, markRaw, reactive, readonly } from 'vue';
@@ -93,7 +93,7 @@ const componentKey = (plugin, name) => `${plugin}/${name}`;
 
 function assertName(value, label) {
     if (typeof value !== 'string' || value.trim() === '') {
-        throw new TypeError(`Inventoros plugin SDK: ${label} must be a non-empty string.`);
+        throw new TypeError(`KlikWareHouse plugin SDK: ${label} must be a non-empty string.`);
     }
 }
 
@@ -114,7 +114,7 @@ function registerComponent(plugin, name, component) {
 function registerSlotComponent(slot, component, options = {}) {
     assertName(slot, 'slot');
     if (!slot.includes(':')) {
-        throw new TypeError('Inventoros plugin SDK: slot must look like "<page>:<slot>", e.g. "dashboard:header".');
+        throw new TypeError('KlikWareHouse plugin SDK: slot must look like "<page>:<slot>", e.g. "dashboard:header".');
     }
 
     const entries = slotComponents[slot] ?? [];
@@ -136,7 +136,7 @@ function registerSlotComponent(slot, component, options = {}) {
 function registerPage(name, component) {
     assertName(name, 'page name');
     if (!name.startsWith('Plugin::')) {
-        throw new TypeError('Inventoros plugin SDK: page names must start with "Plugin::", e.g. "Plugin::my-plugin/Settings".');
+        throw new TypeError('KlikWareHouse plugin SDK: page names must start with "Plugin::", e.g. "Plugin::my-plugin/Settings".');
     }
     pages[name] = markRaw(component);
 }
@@ -157,7 +157,7 @@ function scopedTo(slug) {
 }
 
 export function installPluginRuntime() {
-    window.Inventoros = Object.freeze({
+    window.KlikWareHouse = Object.freeze({
         apiVersion: 2,
         ...shared,
         i18n: createReadonlyI18n(i18n.global, appLocale),
@@ -169,13 +169,13 @@ export function installPluginRuntime() {
 }
 
 function addStylesheet(href) {
-    if (document.querySelector(`link[data-inventoros-plugin-style="${CSS.escape(href)}"]`)) {
+    if (document.querySelector(`link[data-klikwarehouse-plugin-style="${CSS.escape(href)}"]`)) {
         return;
     }
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = href;
-    link.dataset.inventorosPluginStyle = href;
+    link.dataset.klikwarehousePluginStyle = href;
     document.head.appendChild(link);
 }
 
@@ -206,7 +206,7 @@ export function loadPluginAssets(assets) {
                         return undefined;
                     })
                     .catch((error) => {
-                        console.error(`[Inventoros] Plugin "${asset.slug}" UI failed to load.`, error);
+                        console.error(`[KlikWareHouse] Plugin "${asset.slug}" UI failed to load.`, error);
                     }),
             );
         }

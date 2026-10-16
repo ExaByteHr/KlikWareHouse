@@ -1367,18 +1367,18 @@
       "marketplace": "Marketplace"
     },
     "marketplace": {
-      "intro": "Plugins from the Inventoros marketplace are signed. Each download is checked against the marketplace key before it is installed, even when ZIP uploads are turned off.",
-      "notConfigured": "Marketplace installs are off because no marketplace signing key is configured. Set INVENTOROS_MARKETPLACE_PUBLIC_KEY to turn them on.",
+      "intro": "Plugins from the KlikWareHouse marketplace are signed. Each download is checked against the marketplace key before it is installed, even when ZIP uploads are turned off.",
+      "notConfigured": "Marketplace installs are off because no marketplace signing key is configured. Set KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY to turn them on.",
       "unavailable": "The marketplace could not be loaded.",
       "empty": "No plugins are available from the marketplace yet.",
-      "account": "inventoros.com account",
+      "account": "klikwarehouse.com account",
       "connectedAs": "Connected as {name} ({email})",
-      "connectHint": "Paid plugins you own are installable once you connect your account. Create a marketplace connection token on your inventoros.com account page and paste it here.",
+      "connectHint": "Paid plugins you own are installable once you connect your account. Create a marketplace connection token on your klikwarehouse.com account page and paste it here.",
       "tokenLabel": "Marketplace connection token",
       "connect": "Connect",
       "connecting": "Connecting...",
       "disconnect": "Disconnect",
-      "confirmDisconnect": "Disconnect this workspace from inventoros.com? Installed plugins keep working.",
+      "confirmDisconnect": "Disconnect this workspace from klikwarehouse.com? Installed plugins keep working.",
       "free": "Free",
       "perMonth": "{price} per month",
       "perYear": "{price} per year",
@@ -1389,9 +1389,9 @@
       "update": "Update to {version}",
       "upToDate": "Up to date",
       "working": "Working...",
-      "needsPurchase": "Paid plugin. Get it on inventoros.com, then connect your account to install it.",
+      "needsPurchase": "Paid plugin. Get it on klikwarehouse.com, then connect your account to install it.",
       "notOwned": "Your connected account does not own this plugin yet.",
-      "viewOnMarketplace": "View on inventoros.com",
+      "viewOnMarketplace": "View on klikwarehouse.com",
       "readOnly": "You can browse the marketplace. Installing plugins needs the Manage Plugins permission."
     },
     "confirmDelete": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
@@ -2288,7 +2288,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros is already installed.",
+      "alreadyInstalled": "KlikWareHouse is already installed.",
       "connectionSuccessful": "Database connection successful.",
       "connectionFailed": "Database connection failed: {error}",
       "databaseInstalled": "Database installed.",
@@ -2296,10 +2296,10 @@
       "adminCreated": "Admin account created."
     },
     "welcome": {
-      "title": "Welcome to Inventoros",
+      "title": "Welcome to KlikWareHouse",
       "subtitle": "Inventory Management for the Rest of Us",
       "wizard": "Installation Wizard",
-      "description": "Thank you for choosing Inventoros! This installation wizard will guide you through the setup process.",
+      "description": "Thank you for choosing KlikWareHouse! This installation wizard will guide you through the setup process.",
       "includes": "The installation process includes",
       "step1": "System Requirements Check",
       "step1Desc": "Verify your server meets all requirements",
@@ -2308,7 +2308,7 @@
       "step3": "Admin Account Creation",
       "step3Desc": "Create your organization and admin user",
       "step4": "Complete Setup",
-      "step4Desc": "Finalize installation and start using Inventoros",
+      "step4Desc": "Finalize installation and start using KlikWareHouse",
       "beforeBegin": "Before you begin",
       "beforeBeginDesc": "Make sure you have PHP 8.2+, MySQL/PostgreSQL, and the required PHP extensions installed.",
       "startInstallation": "Start Installation",
@@ -2318,7 +2318,7 @@
       "title": "System Requirements",
       "subtitle": "Checking your server configuration",
       "allMet": "All requirements met!",
-      "allMetDesc": "Your server meets all the requirements to run Inventoros.",
+      "allMetDesc": "Your server meets all the requirements to run KlikWareHouse.",
       "notMet": "Some requirements are not met",
       "notMetDesc": "Please fix the issues below before continuing.",
       "current": "Current",
@@ -2344,7 +2344,7 @@
       "testing": "Testing Connection...",
       "dbExistsHint": "Make sure your database exists before proceeding. The installer will create the necessary tables.",
       "resetTitle": "This database has tables from an unfinished installation",
-      "resetWarning": "Resetting deletes every table in this database, including any that do not belong to Inventoros, then installs again. Only continue if this database is used for Inventoros alone.",
+      "resetWarning": "Resetting deletes every table in this database, including any that do not belong to KlikWareHouse, then installs again. Only continue if this database is used for KlikWareHouse alone.",
       "resetConfirm": "I understand that every table in this database will be deleted",
       "resetAndInstall": "Reset database and install",
       "installDatabase": "Install Database",
@@ -2364,7 +2364,7 @@
       "passwordHint": "At least 8 characters",
       "confirmPassword": "Confirm Password",
       "confirmPasswordHint": "Confirm your password",
-      "accessNote": "This admin account will have full access to your Inventoros installation.",
+      "accessNote": "This admin account will have full access to your KlikWareHouse installation.",
       "completeInstallation": "Complete Installation",
       "creatingAccount": "Creating Account...",
       "orgNamePlaceholder": "Acme Corporation",
@@ -2373,7 +2373,7 @@
     },
     "complete": {
       "title": "Installation Complete!",
-      "description": "Inventoros has been successfully installed and configured.",
+      "description": "KlikWareHouse has been successfully installed and configured.",
       "whatsNext": "What's Next?",
       "step1": "Log in with your admin account",
       "step2": "Set up your product categories and locations",
@@ -2384,7 +2384,7 @@
       "community": "Community Discussions",
       "issues": "Report Issues",
       "goToLogin": "Go to Login",
-      "thankYou": "Thank you for choosing Inventoros!"
+      "thankYou": "Thank you for choosing KlikWareHouse!"
     }
   },
   "errors": {

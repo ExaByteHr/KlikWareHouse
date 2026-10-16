@@ -1466,18 +1466,18 @@
       "marketplace": "插件市场"
     },
     "marketplace": {
-      "intro": "Inventoros 插件市场中的插件均已签名。每次下载在安装前都会使用市场密钥进行校验，即使已关闭 ZIP 上传也是如此。",
-      "notConfigured": "由于未配置市场签名密钥，市场安装已关闭。设置 INVENTOROS_MARKETPLACE_PUBLIC_KEY 即可开启。",
+      "intro": "KlikWareHouse 插件市场中的插件均已签名。每次下载在安装前都会使用市场密钥进行校验，即使已关闭 ZIP 上传也是如此。",
+      "notConfigured": "由于未配置市场签名密钥，市场安装已关闭。设置 KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY 即可开启。",
       "unavailable": "无法加载插件市场。",
       "empty": "插件市场暂无可用插件。",
-      "account": "inventoros.com 账户",
+      "account": "klikwarehouse.com 账户",
       "connectedAs": "已连接为 {name}（{email}）",
-      "connectHint": "连接账户后即可安装您已拥有的付费插件。请在 inventoros.com 的账户页面创建市场连接令牌，并粘贴到此处。",
+      "connectHint": "连接账户后即可安装您已拥有的付费插件。请在 klikwarehouse.com 的账户页面创建市场连接令牌，并粘贴到此处。",
       "tokenLabel": "市场连接令牌",
       "connect": "连接",
       "connecting": "连接中...",
       "disconnect": "断开连接",
-      "confirmDisconnect": "要断开此工作区与 inventoros.com 的连接吗？已安装的插件将继续正常运行。",
+      "confirmDisconnect": "要断开此工作区与 klikwarehouse.com 的连接吗？已安装的插件将继续正常运行。",
       "free": "免费",
       "perMonth": "每月 {price}",
       "perYear": "每年 {price}",
@@ -1488,9 +1488,9 @@
       "update": "更新到 {version}",
       "upToDate": "已是最新",
       "working": "处理中...",
-      "needsPurchase": "付费插件。请在 inventoros.com 获取，然后连接您的账户进行安装。",
+      "needsPurchase": "付费插件。请在 klikwarehouse.com 获取，然后连接您的账户进行安装。",
       "notOwned": "您连接的账户尚未拥有此插件。",
-      "viewOnMarketplace": "在 inventoros.com 上查看",
+      "viewOnMarketplace": "在 klikwarehouse.com 上查看",
       "readOnly": "您可以浏览插件市场。安装插件需要“管理插件”权限。"
     },
     "confirmDelete": "确定要删除“{name}”吗？此操作无法撤销。",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros 已安装。",
+      "alreadyInstalled": "KlikWareHouse 已安装。",
       "connectionSuccessful": "数据库连接成功。",
       "connectionFailed": "数据库连接失败：{error}",
       "databaseInstalled": "数据库已安装。",
@@ -2395,10 +2395,10 @@
       "adminCreated": "管理员账户已创建。"
     },
     "welcome": {
-      "title": "欢迎使用 Inventoros",
+      "title": "欢迎使用 KlikWareHouse",
       "subtitle": "人人适用的库存管理系统",
       "wizard": "安装向导",
-      "description": "感谢您选择 Inventoros！本安装向导将引导您完成设置过程。",
+      "description": "感谢您选择 KlikWareHouse！本安装向导将引导您完成设置过程。",
       "includes": "安装过程包括",
       "step1": "系统要求检查",
       "step1Desc": "验证服务器是否满足所有要求",
@@ -2407,7 +2407,7 @@
       "step3": "管理员账户创建",
       "step3Desc": "创建组织和管理员用户",
       "step4": "完成设置",
-      "step4Desc": "完成安装并开始使用 Inventoros",
+      "step4Desc": "完成安装并开始使用 KlikWareHouse",
       "beforeBegin": "开始之前",
       "beforeBeginDesc": "请确保已安装 PHP 8.2+、MySQL/PostgreSQL 及所需的 PHP 扩展。",
       "startInstallation": "开始安装",
@@ -2417,7 +2417,7 @@
       "title": "系统要求",
       "subtitle": "正在检查服务器配置",
       "allMet": "所有要求已满足！",
-      "allMetDesc": "您的服务器满足运行 Inventoros 的所有要求。",
+      "allMetDesc": "您的服务器满足运行 KlikWareHouse 的所有要求。",
       "notMet": "部分要求未满足",
       "notMetDesc": "请在继续之前修复以下问题。",
       "current": "当前",
@@ -2443,7 +2443,7 @@
       "testing": "正在测试连接...",
       "dbExistsHint": "请在继续之前确保数据库已存在。安装程序将创建必要的表。",
       "resetTitle": "此数据库包含一次未完成安装留下的表",
-      "resetWarning": "重置会删除此数据库中的所有表（包括不属于 Inventoros 的表），然后重新安装。仅当此数据库专供 Inventoros 使用时才继续。",
+      "resetWarning": "重置会删除此数据库中的所有表（包括不属于 KlikWareHouse 的表），然后重新安装。仅当此数据库专供 KlikWareHouse 使用时才继续。",
       "resetConfirm": "我了解此数据库中的所有表都将被删除",
       "resetAndInstall": "重置数据库并安装",
       "installDatabase": "安装数据库",
@@ -2463,7 +2463,7 @@
       "passwordHint": "至少 8 个字符",
       "confirmPassword": "确认密码",
       "confirmPasswordHint": "请确认您的密码",
-      "accessNote": "此管理员账户将拥有 Inventoros 安装的完全访问权限。",
+      "accessNote": "此管理员账户将拥有 KlikWareHouse 安装的完全访问权限。",
       "completeInstallation": "完成安装",
       "creatingAccount": "正在创建账户...",
       "orgNamePlaceholder": "某某有限公司",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "安装完成！",
-      "description": "Inventoros 已成功安装和配置。",
+      "description": "KlikWareHouse 已成功安装和配置。",
       "whatsNext": "下一步",
       "step1": "使用管理员账户登录",
       "step2": "设置产品分类和库位",
@@ -2483,7 +2483,7 @@
       "community": "社区讨论",
       "issues": "报告问题",
       "goToLogin": "前往登录",
-      "thankYou": "感谢您选择 Inventoros！"
+      "thankYou": "感谢您选择 KlikWareHouse！"
     }
   },
   "errors": {

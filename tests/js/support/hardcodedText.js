@@ -10,7 +10,7 @@ import { parse } from 'vue/compiler-sfc';
 // tokens with digits, dots, slashes or @ (SKU-001, you@example.com,
 // order.created, https://...) are allowed without being listed.
 export const ALLOWED_WORDS = new Set([
-    'Inventoros',
+    'KlikWareHouse', 'klikwarehouse',
     'GitHub', 'EasyPost', 'Shippo', 'Stripe', 'PayPal', 'FedEx', 'Slack', 'Shopify', 'WooCommerce',
     'Google', 'Microsoft', 'Apple', 'Android', 'iOS', 'Docker', 'Laravel', 'Vue', 'Composer', 'npm',
     'cPanel', 'GraphQL', 'OAuth', 'MySQL', 'PostgreSQL', 'SQLite', 'Redis', 'Postmark', 'Mailgun',

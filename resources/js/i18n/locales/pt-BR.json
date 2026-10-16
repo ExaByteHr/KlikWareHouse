@@ -1466,18 +1466,18 @@
       "marketplace": "Marketplace"
     },
     "marketplace": {
-      "intro": "Os plugins do marketplace do Inventoros são assinados. Cada download é verificado com a chave do marketplace antes de ser instalado, mesmo quando o envio de ZIP está desativado.",
-      "notConfigured": "As instalações pelo marketplace estão desativadas porque nenhuma chave de assinatura do marketplace está configurada. Defina INVENTOROS_MARKETPLACE_PUBLIC_KEY para ativá-las.",
+      "intro": "Os plugins do marketplace do KlikWareHouse são assinados. Cada download é verificado com a chave do marketplace antes de ser instalado, mesmo quando o envio de ZIP está desativado.",
+      "notConfigured": "As instalações pelo marketplace estão desativadas porque nenhuma chave de assinatura do marketplace está configurada. Defina KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY para ativá-las.",
       "unavailable": "Não foi possível carregar o marketplace.",
       "empty": "Ainda não há plugins disponíveis no marketplace.",
-      "account": "Conta inventoros.com",
+      "account": "Conta klikwarehouse.com",
       "connectedAs": "Conectado como {name} ({email})",
-      "connectHint": "Os plugins pagos que você possui podem ser instalados depois que você conectar sua conta. Crie um token de conexão do marketplace na página da sua conta em inventoros.com e cole-o aqui.",
+      "connectHint": "Os plugins pagos que você possui podem ser instalados depois que você conectar sua conta. Crie um token de conexão do marketplace na página da sua conta em klikwarehouse.com e cole-o aqui.",
       "tokenLabel": "Token de conexão do marketplace",
       "connect": "Conectar",
       "connecting": "Conectando...",
       "disconnect": "Desconectar",
-      "confirmDisconnect": "Desconectar este espaço de trabalho do inventoros.com? Os plugins instalados continuam funcionando.",
+      "confirmDisconnect": "Desconectar este espaço de trabalho do klikwarehouse.com? Os plugins instalados continuam funcionando.",
       "free": "Grátis",
       "perMonth": "{price} por mês",
       "perYear": "{price} por ano",
@@ -1488,9 +1488,9 @@
       "update": "Atualizar para {version}",
       "upToDate": "Atualizado",
       "working": "Processando...",
-      "needsPurchase": "Plugin pago. Adquira-o em inventoros.com e depois conecte sua conta para instalá-lo.",
+      "needsPurchase": "Plugin pago. Adquira-o em klikwarehouse.com e depois conecte sua conta para instalá-lo.",
       "notOwned": "Sua conta conectada ainda não possui este plugin.",
-      "viewOnMarketplace": "Ver em inventoros.com",
+      "viewOnMarketplace": "Ver em klikwarehouse.com",
       "readOnly": "Você pode explorar o marketplace. Instalar plugins exige a permissão Gerenciar Plugins."
     },
     "confirmDelete": "Tem certeza de que deseja excluir \"{name}\"? Esta ação não pode ser desfeita.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "O Inventoros já está instalado.",
+      "alreadyInstalled": "O KlikWareHouse já está instalado.",
       "connectionSuccessful": "Conexão com o banco de dados bem-sucedida.",
       "connectionFailed": "Falha na conexão com o banco de dados: {error}",
       "databaseInstalled": "Banco de dados instalado.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "Conta de administrador criada."
     },
     "welcome": {
-      "title": "Bem-vindo ao Inventoros",
+      "title": "Bem-vindo ao KlikWareHouse",
       "subtitle": "Gerenciamento de Estoque para Todos",
       "wizard": "Assistente de Instalação",
-      "description": "Obrigado por escolher o Inventoros! Este assistente de instalação irá guiá-lo pelo processo de configuração.",
+      "description": "Obrigado por escolher o KlikWareHouse! Este assistente de instalação irá guiá-lo pelo processo de configuração.",
       "includes": "O processo de instalação inclui",
       "step1": "Verificação de Requisitos do Sistema",
       "step1Desc": "Verificar se seu servidor atende todos os requisitos",
@@ -2407,7 +2407,7 @@
       "step3": "Criação da Conta de Administrador",
       "step3Desc": "Criar sua organização e usuário administrador",
       "step4": "Concluir Configuração",
-      "step4Desc": "Finalizar a instalação e começar a usar o Inventoros",
+      "step4Desc": "Finalizar a instalação e começar a usar o KlikWareHouse",
       "beforeBegin": "Antes de começar",
       "beforeBeginDesc": "Certifique-se de ter PHP 8.2+, MySQL/PostgreSQL e as extensões PHP necessárias instaladas.",
       "startInstallation": "Iniciar Instalação",
@@ -2417,7 +2417,7 @@
       "title": "Requisitos do Sistema",
       "subtitle": "Verificando a configuração do seu servidor",
       "allMet": "Todos os requisitos atendidos!",
-      "allMetDesc": "Seu servidor atende todos os requisitos para executar o Inventoros.",
+      "allMetDesc": "Seu servidor atende todos os requisitos para executar o KlikWareHouse.",
       "notMet": "Alguns requisitos não foram atendidos",
       "notMetDesc": "Por favor, corrija os problemas abaixo antes de continuar.",
       "current": "Atual",
@@ -2443,7 +2443,7 @@
       "testing": "Testando Conexão...",
       "dbExistsHint": "Certifique-se de que seu banco de dados exista antes de prosseguir. O instalador criará as tabelas necessárias.",
       "resetTitle": "Este banco de dados tem tabelas de uma instalação não concluída",
-      "resetWarning": "Redefinir exclui todas as tabelas deste banco de dados, inclusive as que não pertencem ao Inventoros, e depois instala novamente. Continue somente se este banco de dados for usado apenas pelo Inventoros.",
+      "resetWarning": "Redefinir exclui todas as tabelas deste banco de dados, inclusive as que não pertencem ao KlikWareHouse, e depois instala novamente. Continue somente se este banco de dados for usado apenas pelo KlikWareHouse.",
       "resetConfirm": "Entendo que todas as tabelas deste banco de dados serão excluídas",
       "resetAndInstall": "Redefinir banco de dados e instalar",
       "installDatabase": "Instalar Banco de Dados",
@@ -2463,7 +2463,7 @@
       "passwordHint": "No mínimo 8 caracteres",
       "confirmPassword": "Confirmar Senha",
       "confirmPasswordHint": "Confirme sua senha",
-      "accessNote": "Esta conta de administrador terá acesso total à sua instalação do Inventoros.",
+      "accessNote": "Esta conta de administrador terá acesso total à sua instalação do KlikWareHouse.",
       "completeInstallation": "Concluir Instalação",
       "creatingAccount": "Criando Conta...",
       "orgNamePlaceholder": "Empresa Exemplo Ltda.",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "Instalação Concluída!",
-      "description": "O Inventoros foi instalado e configurado com sucesso.",
+      "description": "O KlikWareHouse foi instalado e configurado com sucesso.",
       "whatsNext": "Próximos Passos",
       "step1": "Faça login com sua conta de administrador",
       "step2": "Configure suas categorias de produtos e localizações",
@@ -2483,7 +2483,7 @@
       "community": "Discussões da Comunidade",
       "issues": "Reportar Problemas",
       "goToLogin": "Ir para o Login",
-      "thankYou": "Obrigado por escolher o Inventoros!"
+      "thankYou": "Obrigado por escolher o KlikWareHouse!"
     }
   },
   "errors": {

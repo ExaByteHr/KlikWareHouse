@@ -1466,18 +1466,18 @@
       "marketplace": "Pazar Yeri"
     },
     "marketplace": {
-      "intro": "Inventoros pazar yerindeki eklentiler imzalıdır. Her indirme, ZIP yüklemeleri kapalı olsa bile, yüklenmeden önce pazar yeri anahtarıyla doğrulanır.",
-      "notConfigured": "Pazar yeri imzalama anahtarı yapılandırılmadığı için pazar yerinden yükleme kapalı. Açmak için INVENTOROS_MARKETPLACE_PUBLIC_KEY değerini ayarlayın.",
+      "intro": "KlikWareHouse pazar yerindeki eklentiler imzalıdır. Her indirme, ZIP yüklemeleri kapalı olsa bile, yüklenmeden önce pazar yeri anahtarıyla doğrulanır.",
+      "notConfigured": "Pazar yeri imzalama anahtarı yapılandırılmadığı için pazar yerinden yükleme kapalı. Açmak için KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY değerini ayarlayın.",
       "unavailable": "Pazar yeri yüklenemedi.",
       "empty": "Pazar yerinde henüz eklenti yok.",
-      "account": "inventoros.com hesabı",
+      "account": "klikwarehouse.com hesabı",
       "connectedAs": "{name} ({email}) olarak bağlı",
-      "connectHint": "Sahip olduğunuz ücretli eklentiler, hesabınızı bağladığınızda yüklenebilir. inventoros.com hesap sayfanızda bir pazar yeri bağlantı token'ı oluşturun ve buraya yapıştırın.",
+      "connectHint": "Sahip olduğunuz ücretli eklentiler, hesabınızı bağladığınızda yüklenebilir. klikwarehouse.com hesap sayfanızda bir pazar yeri bağlantı token'ı oluşturun ve buraya yapıştırın.",
       "tokenLabel": "Pazar yeri bağlantı token'ı",
       "connect": "Bağlan",
       "connecting": "Bağlanıyor...",
       "disconnect": "Bağlantıyı Kes",
-      "confirmDisconnect": "Bu çalışma alanının inventoros.com ile bağlantısı kesilsin mi? Yüklü eklentiler çalışmaya devam eder.",
+      "confirmDisconnect": "Bu çalışma alanının klikwarehouse.com ile bağlantısı kesilsin mi? Yüklü eklentiler çalışmaya devam eder.",
       "free": "Ücretsiz",
       "perMonth": "Aylık {price}",
       "perYear": "Yıllık {price}",
@@ -1488,9 +1488,9 @@
       "update": "{version} sürümüne güncelle",
       "upToDate": "Güncel",
       "working": "İşleniyor...",
-      "needsPurchase": "Ücretli eklenti. inventoros.com üzerinden edinin, ardından yüklemek için hesabınızı bağlayın.",
+      "needsPurchase": "Ücretli eklenti. klikwarehouse.com üzerinden edinin, ardından yüklemek için hesabınızı bağlayın.",
       "notOwned": "Bağlı hesabınız henüz bu eklentiye sahip değil.",
-      "viewOnMarketplace": "inventoros.com'da görüntüle",
+      "viewOnMarketplace": "klikwarehouse.com'da görüntüle",
       "readOnly": "Pazar yerine göz atabilirsiniz. Eklenti yüklemek için Eklentileri Yönet izni gerekir."
     },
     "confirmDelete": "\"{name}\" eklentisini silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros zaten kurulu.",
+      "alreadyInstalled": "KlikWareHouse zaten kurulu.",
       "connectionSuccessful": "Veritabanı bağlantısı başarılı.",
       "connectionFailed": "Veritabanı bağlantısı başarısız: {error}",
       "databaseInstalled": "Veritabanı kuruldu.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "Yönetici hesabı oluşturuldu."
     },
     "welcome": {
-      "title": "Inventoros'a Hoş Geldiniz",
+      "title": "KlikWareHouse'a Hoş Geldiniz",
       "subtitle": "Herkes İçin Envanter Yönetimi",
       "wizard": "Kurulum Sihirbazı",
-      "description": "Inventoros'u tercih ettiğiniz için teşekkürler! Bu kurulum sihirbazı, yapılandırma sürecinde size rehberlik edecektir.",
+      "description": "KlikWareHouse'u tercih ettiğiniz için teşekkürler! Bu kurulum sihirbazı, yapılandırma sürecinde size rehberlik edecektir.",
       "includes": "Kurulum süreci şunları içerir",
       "step1": "Sistem Gereksinimleri Kontrolü",
       "step1Desc": "Sunucunuzun tüm gereksinimleri karşıladığını doğrulayın",
@@ -2407,7 +2407,7 @@
       "step3": "Yönetici Hesabı Oluşturma",
       "step3Desc": "Organizasyonunuzu ve yönetici kullanıcınızı oluşturun",
       "step4": "Kurulumu Tamamla",
-      "step4Desc": "Kurulumu sonlandırın ve Inventoros'u kullanmaya başlayın",
+      "step4Desc": "Kurulumu sonlandırın ve KlikWareHouse'u kullanmaya başlayın",
       "beforeBegin": "Başlamadan önce",
       "beforeBeginDesc": "PHP 8.2+, MySQL/PostgreSQL ve gerekli PHP uzantılarının yüklü olduğundan emin olun.",
       "startInstallation": "Kurulumu Başlat",
@@ -2417,7 +2417,7 @@
       "title": "Sistem Gereksinimleri",
       "subtitle": "Sunucu yapılandırmanız kontrol ediliyor",
       "allMet": "Tüm gereksinimler karşılandı!",
-      "allMetDesc": "Sunucunuz Inventoros'u çalıştırmak için tüm gereksinimleri karşılıyor.",
+      "allMetDesc": "Sunucunuz KlikWareHouse'u çalıştırmak için tüm gereksinimleri karşılıyor.",
       "notMet": "Bazı gereksinimler karşılanmadı",
       "notMetDesc": "Devam etmeden önce lütfen aşağıdaki sorunları düzeltin.",
       "current": "Mevcut",
@@ -2443,7 +2443,7 @@
       "testing": "Bağlantı test ediliyor...",
       "dbExistsHint": "Devam etmeden önce veritabanınızın mevcut olduğundan emin olun. Yükleyici gerekli tabloları oluşturacaktır.",
       "resetTitle": "Bu veritabanında tamamlanmamış bir kurulumdan kalan tablolar var",
-      "resetWarning": "Sıfırlama, Inventoros'a ait olmayanlar dahil bu veritabanındaki tüm tabloları siler ve ardından yeniden kurar. Yalnızca bu veritabanı sadece Inventoros için kullanılıyorsa devam edin.",
+      "resetWarning": "Sıfırlama, KlikWareHouse'a ait olmayanlar dahil bu veritabanındaki tüm tabloları siler ve ardından yeniden kurar. Yalnızca bu veritabanı sadece KlikWareHouse için kullanılıyorsa devam edin.",
       "resetConfirm": "Bu veritabanındaki tüm tabloların silineceğini anlıyorum",
       "resetAndInstall": "Veritabanını sıfırla ve kur",
       "installDatabase": "Veritabanını Kur",
@@ -2463,7 +2463,7 @@
       "passwordHint": "En az 8 karakter",
       "confirmPassword": "Şifre Onayı",
       "confirmPasswordHint": "Şifrenizi onaylayın",
-      "accessNote": "Bu yönetici hesabı, Inventoros kurulumunuza tam erişime sahip olacaktır.",
+      "accessNote": "Bu yönetici hesabı, KlikWareHouse kurulumunuza tam erişime sahip olacaktır.",
       "completeInstallation": "Kurulumu Tamamla",
       "creatingAccount": "Hesap oluşturuluyor...",
       "orgNamePlaceholder": "Acme A.Ş.",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "Kurulum Tamamlandı!",
-      "description": "Inventoros başarıyla kuruldu ve yapılandırıldı.",
+      "description": "KlikWareHouse başarıyla kuruldu ve yapılandırıldı.",
       "whatsNext": "Sırada Ne Var?",
       "step1": "Yönetici hesabınızla giriş yapın",
       "step2": "Ürün kategorilerinizi ve konumlarınızı oluşturun",
@@ -2483,7 +2483,7 @@
       "community": "Topluluk Tartışmaları",
       "issues": "Sorun Bildirin",
       "goToLogin": "Giriş Sayfasına Git",
-      "thankYou": "Inventoros'u tercih ettiğiniz için teşekkürler!"
+      "thankYou": "KlikWareHouse'u tercih ettiğiniz için teşekkürler!"
     }
   },
   "errors": {

@@ -12,7 +12,7 @@ import { installPluginRuntime, loadPluginAssets, resolveRuntimePage } from './pl
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
-// window.Inventoros: Vue plus the plugin SDK, for pre-built plugin bundles
+// window.KlikWareHouse: Vue plus the plugin SDK, for pre-built plugin bundles
 // that are imported at runtime (see ./plugins/runtime.js).
 installPluginRuntime();
 

@@ -5,9 +5,9 @@ const year = new Date().getFullYear();
 <template>
     <footer class="text-xs text-text-tertiary">
         <p class="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span>&copy; {{ year }} Inventoros</span>
+            <span>&copy; {{ year }} KlikWareHouse</span>
             <span aria-hidden="true">&middot;</span>
-            <a href="https://inventoros.com" target="_blank" rel="noopener noreferrer" class="hover:text-text-secondary">inventoros.com</a>
+            <a href="https://klikwarehouse.com" target="_blank" rel="noopener noreferrer" class="hover:text-text-secondary">klikwarehouse.com</a>
             <span aria-hidden="true">&middot;</span>
             <i18n-t keypath="legal.licensedUnder" tag="span">
                 <template #license>
@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
                 </template>
             </i18n-t>
             <span aria-hidden="true">&middot;</span>
-            <a href="https://github.com/Inventoros/Inventoros" target="_blank" rel="noopener noreferrer" class="hover:text-text-secondary">{{ $t('legal.sourceCode') }}</a>
+            <a href="https://github.com/KlikWareHouse/KlikWareHouse" target="_blank" rel="noopener noreferrer" class="hover:text-text-secondary">{{ $t('legal.sourceCode') }}</a>
         </p>
     </footer>
 </template>
