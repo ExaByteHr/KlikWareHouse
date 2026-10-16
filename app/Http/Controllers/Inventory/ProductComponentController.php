@@ -220,7 +220,7 @@ class ProductComponentController extends Controller
      * @param  int  $componentId  The component product ID to add
      * @param  array  $visited  Previously visited product IDs (for recursion)
      */
-    private function wouldCreateCircularReference(int $parentId, int $componentId, array $visited = []): bool
+    private function wouldCreateCircularReference(int $parentId, int $componentId): bool
     {
         // Check if the component product has components that reference back to parent
         $componentProduct = Product::find($componentId);
@@ -229,21 +229,29 @@ class ProductComponentController extends Controller
             return false;
         }
 
-        $visited[] = $parentId;
+        $visited = [$parentId];
+        $queue = [$componentId];
 
-        $subComponents = ProductComponent::where('parent_product_id', $componentId)->get();
+        while (! empty($queue)) {
+            $subComponents = ProductComponent::whereIn('parent_product_id', $queue)
+                ->pluck('component_product_id')
+                ->toArray();
 
-        foreach ($subComponents as $subComponent) {
-            if ($subComponent->component_product_id === $parentId) {
+            if (empty($subComponents)) {
+                break;
+            }
+
+            if (in_array($parentId, $subComponents)) {
                 return true;
             }
 
-            if (in_array($subComponent->component_product_id, $visited)) {
-                return true;
-            }
-
-            if ($this->wouldCreateCircularReference($parentId, $subComponent->component_product_id, $visited)) {
-                return true;
+            $queue = [];
+            foreach ($subComponents as $subId) {
+                if (in_array($subId, $visited)) {
+                    return true;
+                }
+                $visited[] = $subId;
+                $queue[] = $subId;
             }
         }
 
