@@ -58,28 +58,6 @@ const { t } = useI18n();
                     </ul>
                 </div>
 
-                <!-- Resources -->
-                <div class="bg-status-info-soft border border-status-info/20 rounded-lg p-6 mb-8 text-left">
-                    <h2 class="text-lg font-semibold text-text-primary mb-4">{{ t('install.complete.resources') }}</h2>
-                    <ul class="space-y-2 text-sm">
-                        <li>
-                            <a href="https://klikwarehouse.com/docs" target="_blank" rel="noopener" class="text-brand hover:text-brand-hover hover:underline">
-                                {{ t('install.complete.docs') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/klikwarehouse/klikwarehouse/discussions" target="_blank" class="text-brand hover:text-brand-hover hover:underline">
-                                {{ t('install.complete.community') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/klikwarehouse/klikwarehouse/issues" target="_blank" class="text-brand hover:text-brand-hover hover:underline">
-                                {{ t('install.complete.issues') }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
                 <!-- Login Button -->
                 <div>
                     <Link
