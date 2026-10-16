@@ -245,17 +245,6 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium tracking-tight text-t
                         <div class="whitespace-pre-wrap rounded-lg border border-border-subtle bg-surface-canvas p-4 text-sm text-text-secondary">{{ latestRelease.body }}</div>
                     </div>
 
-                    <div v-if="latestRelease.html_url" class="mb-4">
-                        <a
-                            :href="latestRelease.html_url"
-                            target="_blank"
-                            class="inline-flex items-center gap-1.5 text-sm text-brand hover:underline"
-                        >
-                            {{ t('admin.update.viewOnGithub') }}
-                            <ExternalLink :size="14" />
-                        </a>
-                    </div>
-
                     <Button
                         variant="default"
                         class="w-full"
@@ -410,10 +399,6 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium tracking-tight text-t
                 </div>
                 <div class="p-5">
                     <ul class="space-y-2.5 text-sm text-text-secondary">
-                        <li class="flex items-start gap-2.5">
-                            <Info :size="16" class="mt-0.5 shrink-0 text-brand" />
-                            <span>{{ t('admin.update.fetchedFromRepo', { repo: githubRepo }) }}</span>
-                        </li>
                         <li class="flex items-start gap-2.5">
                             <Info :size="16" class="mt-0.5 shrink-0 text-brand" />
                             <span>{{ t('admin.update.autoBackup') }}</span>

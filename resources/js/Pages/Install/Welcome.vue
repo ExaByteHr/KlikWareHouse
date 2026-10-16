@@ -104,11 +104,6 @@ const { t } = useI18n();
                     </Link>
                 </div>
             </div>
-
-            <!-- Footer -->
-            <div class="text-center mt-6 text-sm text-text-secondary">
-                <p>{{ t('install.welcome.license') }}</p>
-            </div>
         </div>
     </div>
 </template>
