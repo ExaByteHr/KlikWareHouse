@@ -287,7 +287,7 @@ return [
         'work'                     => '仕事',
         'year'                     => '年',
 
-        // Inventoros form fields
+        // KlikWareHouse form fields
         'customer_id'              => '顧客',
         'customer_name'            => '顧客名',
         'customer_email'           => '顧客のメールアドレス',

@@ -22,7 +22,7 @@ const root = join(import.meta.dirname, '..', '..', 'resources', 'js');
 // file (relative to resources/js) -> literal texts allowed there
 const ALLOWED = {
     // Installer defaults: literal database settings, not prose.
-    'Pages/Install/Database.vue': ['localhost', 'inventoros', 'root'],
+    'Pages/Install/Database.vue': ['localhost', 'klikwarehouse', 'root'],
 };
 
 function vueFiles(dir) {
@@ -39,7 +39,7 @@ test('the detector flags English and lets codes, brands and keys through', () =>
     assert.equal(hasTranslatableWords('SKU'), false);
     assert.equal(hasTranslatableWords('SKU-001'), false);
     assert.equal(hasTranslatableWords('you@example.com'), false);
-    assert.equal(hasTranslatableWords('Inventoros'), false);
+    assert.equal(hasTranslatableWords('KlikWareHouse'), false);
     assert.equal(hasTranslatableWords(' / '), false);
     assert.equal(hasTranslatableWords('&times;'), false);
 

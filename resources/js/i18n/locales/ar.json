@@ -1466,18 +1466,18 @@
       "marketplace": "المتجر"
     },
     "marketplace": {
-      "intro": "الإضافات من متجر Inventoros موقّعة. يتم التحقق من كل تنزيل مقابل مفتاح المتجر قبل تثبيته، حتى عند تعطيل رفع ملفات ZIP.",
-      "notConfigured": "التثبيت من المتجر معطّل لعدم تهيئة مفتاح توقيع المتجر. عيّن INVENTOROS_MARKETPLACE_PUBLIC_KEY لتفعيله.",
+      "intro": "الإضافات من متجر KlikWareHouse موقّعة. يتم التحقق من كل تنزيل مقابل مفتاح المتجر قبل تثبيته، حتى عند تعطيل رفع ملفات ZIP.",
+      "notConfigured": "التثبيت من المتجر معطّل لعدم تهيئة مفتاح توقيع المتجر. عيّن KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY لتفعيله.",
       "unavailable": "تعذر تحميل المتجر.",
       "empty": "لا توجد إضافات متاحة في المتجر بعد.",
-      "account": "حساب inventoros.com",
+      "account": "حساب klikwarehouse.com",
       "connectedAs": "متصل باسم {name} ({email})",
-      "connectHint": "يمكن تثبيت الإضافات المدفوعة التي تملكها بعد ربط حسابك. أنشئ رمز اتصال بالمتجر من صفحة حسابك على inventoros.com والصقه هنا.",
+      "connectHint": "يمكن تثبيت الإضافات المدفوعة التي تملكها بعد ربط حسابك. أنشئ رمز اتصال بالمتجر من صفحة حسابك على klikwarehouse.com والصقه هنا.",
       "tokenLabel": "رمز الاتصال بالمتجر",
       "connect": "اتصال",
       "connecting": "جارٍ الاتصال...",
       "disconnect": "قطع الاتصال",
-      "confirmDisconnect": "هل تريد قطع اتصال مساحة العمل هذه بـ inventoros.com؟ ستستمر الإضافات المثبتة في العمل.",
+      "confirmDisconnect": "هل تريد قطع اتصال مساحة العمل هذه بـ klikwarehouse.com؟ ستستمر الإضافات المثبتة في العمل.",
       "free": "مجاني",
       "perMonth": "{price} شهرياً",
       "perYear": "{price} سنوياً",
@@ -1488,9 +1488,9 @@
       "update": "التحديث إلى {version}",
       "upToDate": "محدّث",
       "working": "جارٍ العمل...",
-      "needsPurchase": "إضافة مدفوعة. احصل عليها من inventoros.com، ثم اربط حسابك لتثبيتها.",
+      "needsPurchase": "إضافة مدفوعة. احصل عليها من klikwarehouse.com، ثم اربط حسابك لتثبيتها.",
       "notOwned": "حسابك المتصل لا يملك هذه الإضافة بعد.",
-      "viewOnMarketplace": "عرض على inventoros.com",
+      "viewOnMarketplace": "عرض على klikwarehouse.com",
       "readOnly": "يمكنك تصفح المتجر. يتطلب تثبيت الإضافات صلاحية إدارة الإضافات."
     },
     "confirmDelete": "هل أنت متأكد من حذف \"{name}\"؟ لا يمكن التراجع عن هذا الإجراء.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros مثبت بالفعل.",
+      "alreadyInstalled": "KlikWareHouse مثبت بالفعل.",
       "connectionSuccessful": "تم الاتصال بقاعدة البيانات بنجاح.",
       "connectionFailed": "فشل الاتصال بقاعدة البيانات: {error}",
       "databaseInstalled": "تم تثبيت قاعدة البيانات.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "تم إنشاء حساب المسؤول."
     },
     "welcome": {
-      "title": "مرحباً بك في Inventoros",
+      "title": "مرحباً بك في KlikWareHouse",
       "subtitle": "إدارة المخزون للجميع",
       "wizard": "معالج التثبيت",
-      "description": "شكراً لاختيارك Inventoros! سيرشدك معالج التثبيت هذا خلال عملية الإعداد.",
+      "description": "شكراً لاختيارك KlikWareHouse! سيرشدك معالج التثبيت هذا خلال عملية الإعداد.",
       "includes": "تتضمن عملية التثبيت",
       "step1": "فحص متطلبات النظام",
       "step1Desc": "التحقق من أن خادمك يلبي جميع المتطلبات",
@@ -2407,7 +2407,7 @@
       "step3": "إنشاء حساب المسؤول",
       "step3Desc": "إنشاء مؤسستك وحساب المسؤول",
       "step4": "إكمال الإعداد",
-      "step4Desc": "إنهاء التثبيت والبدء باستخدام Inventoros",
+      "step4Desc": "إنهاء التثبيت والبدء باستخدام KlikWareHouse",
       "beforeBegin": "قبل البدء",
       "beforeBeginDesc": "تأكد من تثبيت PHP 8.2+ و MySQL/PostgreSQL وامتدادات PHP المطلوبة.",
       "startInstallation": "بدء التثبيت",
@@ -2417,7 +2417,7 @@
       "title": "متطلبات النظام",
       "subtitle": "فحص تكوين الخادم",
       "allMet": "تم استيفاء جميع المتطلبات!",
-      "allMetDesc": "يلبي خادمك جميع متطلبات تشغيل Inventoros.",
+      "allMetDesc": "يلبي خادمك جميع متطلبات تشغيل KlikWareHouse.",
       "notMet": "بعض المتطلبات غير مستوفاة",
       "notMetDesc": "يرجى إصلاح المشكلات أدناه قبل المتابعة.",
       "current": "الحالي",
@@ -2443,7 +2443,7 @@
       "testing": "جارٍ اختبار الاتصال...",
       "dbExistsHint": "تأكد من وجود قاعدة البيانات قبل المتابعة. سيقوم المثبت بإنشاء الجداول اللازمة.",
       "resetTitle": "تحتوي قاعدة البيانات هذه على جداول من تثبيت لم يكتمل",
-      "resetWarning": "تؤدي إعادة التعيين إلى حذف كل جدول في قاعدة البيانات هذه، بما في ذلك الجداول التي لا تخص Inventoros، ثم التثبيت من جديد. تابع فقط إذا كانت قاعدة البيانات هذه مخصصة لـ Inventoros وحده.",
+      "resetWarning": "تؤدي إعادة التعيين إلى حذف كل جدول في قاعدة البيانات هذه، بما في ذلك الجداول التي لا تخص KlikWareHouse، ثم التثبيت من جديد. تابع فقط إذا كانت قاعدة البيانات هذه مخصصة لـ KlikWareHouse وحده.",
       "resetConfirm": "أدرك أنه سيتم حذف كل جدول في قاعدة البيانات هذه",
       "resetAndInstall": "إعادة تعيين قاعدة البيانات والتثبيت",
       "installDatabase": "تثبيت قاعدة البيانات",
@@ -2463,7 +2463,7 @@
       "passwordHint": "8 أحرف على الأقل",
       "confirmPassword": "تأكيد كلمة المرور",
       "confirmPasswordHint": "أكّد كلمة المرور",
-      "accessNote": "سيكون لحساب المسؤول هذا صلاحية وصول كاملة إلى تثبيت Inventoros الخاص بك.",
+      "accessNote": "سيكون لحساب المسؤول هذا صلاحية وصول كاملة إلى تثبيت KlikWareHouse الخاص بك.",
       "completeInstallation": "إكمال التثبيت",
       "creatingAccount": "جارٍ إنشاء الحساب...",
       "orgNamePlaceholder": "شركة أكمي",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "اكتمل التثبيت!",
-      "description": "تم تثبيت وتكوين Inventoros بنجاح.",
+      "description": "تم تثبيت وتكوين KlikWareHouse بنجاح.",
       "whatsNext": "ما التالي؟",
       "step1": "سجّل الدخول بحساب المسؤول",
       "step2": "أعدّ فئات المنتجات والمواقع",
@@ -2483,7 +2483,7 @@
       "community": "مناقشات المجتمع",
       "issues": "الإبلاغ عن مشكلات",
       "goToLogin": "الانتقال إلى تسجيل الدخول",
-      "thankYou": "شكراً لاختيارك Inventoros!"
+      "thankYou": "شكراً لاختيارك KlikWareHouse!"
     }
   },
   "errors": {

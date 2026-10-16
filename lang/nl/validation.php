@@ -287,7 +287,7 @@ return [
         'work'                     => 'werk',
         'year'                     => 'jaar',
 
-        // Inventoros form fields
+        // KlikWareHouse form fields
         'customer_id'              => 'klant',
         'customer_name'            => 'klantnaam',
         'customer_email'           => 'e-mailadres van de klant',

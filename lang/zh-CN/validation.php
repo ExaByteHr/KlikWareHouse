@@ -287,7 +287,7 @@ return [
         'work'                     => '工作',
         'year'                     => '年',
 
-        // Inventoros form fields
+        // KlikWareHouse form fields
         'customer_id'              => '客户',
         'customer_name'            => '客户名称',
         'customer_email'           => '客户邮箱',

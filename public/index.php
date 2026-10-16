@@ -10,7 +10,7 @@ if (version_compare(PHP_VERSION, '8.4.1', '<')) {
     if (! headers_sent()) {
         header('Content-Type: text/plain; charset=utf-8', true, 500);
     }
-    echo 'Inventoros requires PHP 8.4.1 or newer. This server runs PHP '.PHP_VERSION.'.'.PHP_EOL
+    echo 'KlikWareHouse requires PHP 8.4.1 or newer. This server runs PHP '.PHP_VERSION.'.'.PHP_EOL
         .'Switch this site to PHP 8.4 or newer (in cPanel: MultiPHP Manager) and reload the page.'.PHP_EOL;
     exit(1);
 }

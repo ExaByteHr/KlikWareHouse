@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? ($brandName ?? config('app.name', 'Inventoros')) }}</title>
+    <title>{{ $title ?? ($brandName ?? config('app.name', 'KlikWareHouse')) }}</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background-color: #f3f4f6;">
     <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #f3f4f6; padding: 40px 0;">
@@ -15,7 +15,7 @@
                     <tr>
                         <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 30px; text-align: center;">
                             <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-                                {{ $brandName ?? config('app.name', 'Inventoros') }}
+                                {{ $brandName ?? config('app.name', 'KlikWareHouse') }}
                             </h1>
                         </td>
                     </tr>
@@ -39,7 +39,7 @@
                             @if(! empty($transactional))
                                 {{-- Documents sent to suppliers and customers: they have no account or preferences here. --}}
                                 <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 1.5; text-align: center;">
-                                    This email was sent by {{ $brandName ?? config('app.name', 'Inventoros') }}.
+                                    This email was sent by {{ $brandName ?? config('app.name', 'KlikWareHouse') }}.
                                     @if(! empty($brandEmail))
                                         Questions? Reply to this email or contact <a href="mailto:{{ $brandEmail }}" style="color: #667eea; text-decoration: none;">{{ $brandEmail }}</a>.
                                     @endif
@@ -66,7 +66,7 @@
                 <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; width: 100%; margin-top: 20px;">
                     <tr>
                         <td style="text-align: center; color: #9ca3af; font-size: 12px;">
-                            © {{ date('Y') }} {{ $brandName ?? config('app.name', 'Inventoros') }}. All rights reserved.
+                            © {{ date('Y') }} {{ $brandName ?? config('app.name', 'KlikWareHouse') }}. All rights reserved.
                         </td>
                     </tr>
                 </table>

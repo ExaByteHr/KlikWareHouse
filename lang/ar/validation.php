@@ -287,7 +287,7 @@ return [
         'work'                     => 'العمل',
         'year'                     => 'السنة',
 
-        // Inventoros form fields
+        // KlikWareHouse form fields
         'customer_id'              => 'العميل',
         'customer_name'            => 'اسم العميل',
         'customer_email'           => 'البريد الإلكتروني للعميل',

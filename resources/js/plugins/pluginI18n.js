@@ -22,7 +22,7 @@ const isPlainObject = (value) =>
  */
 export function sanitizeMessages(messages) {
     if (!isPlainObject(messages)) {
-        throw new TypeError('Inventoros plugin SDK: messages must be a plain object.');
+        throw new TypeError('KlikWareHouse plugin SDK: messages must be a plain object.');
     }
 
     const copy = {};
@@ -42,7 +42,7 @@ export function sanitizeMessages(messages) {
 
 function assertKey(key) {
     if (typeof key !== 'string' || key.trim() === '') {
-        throw new TypeError('Inventoros plugin SDK: a translation key must be a non-empty string.');
+        throw new TypeError('KlikWareHouse plugin SDK: a translation key must be a non-empty string.');
     }
 }
 
@@ -89,7 +89,7 @@ export function createPluginI18n(composer, slug, locale) {
         locale,
         addMessages(localeCode, messages) {
             if (typeof localeCode !== 'string' || localeCode.trim() === '') {
-                throw new TypeError('Inventoros plugin SDK: addMessages needs a locale code such as "en".');
+                throw new TypeError('KlikWareHouse plugin SDK: addMessages needs a locale code such as "en".');
             }
             composer.mergeLocaleMessage(localeCode, { plugins: { [slug]: sanitizeMessages(messages) } });
         },

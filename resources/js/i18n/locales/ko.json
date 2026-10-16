@@ -1466,18 +1466,18 @@
       "marketplace": "마켓플레이스"
     },
     "marketplace": {
-      "intro": "Inventoros 마켓플레이스의 플러그인은 서명되어 있습니다. ZIP 업로드가 꺼져 있어도 각 다운로드는 설치 전에 마켓플레이스 키로 검증됩니다.",
-      "notConfigured": "마켓플레이스 서명 키가 구성되지 않아 마켓플레이스 설치가 꺼져 있습니다. 켜려면 INVENTOROS_MARKETPLACE_PUBLIC_KEY를 설정하세요.",
+      "intro": "KlikWareHouse 마켓플레이스의 플러그인은 서명되어 있습니다. ZIP 업로드가 꺼져 있어도 각 다운로드는 설치 전에 마켓플레이스 키로 검증됩니다.",
+      "notConfigured": "마켓플레이스 서명 키가 구성되지 않아 마켓플레이스 설치가 꺼져 있습니다. 켜려면 KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY를 설정하세요.",
       "unavailable": "마켓플레이스를 불러올 수 없습니다.",
       "empty": "아직 마켓플레이스에서 사용할 수 있는 플러그인이 없습니다.",
-      "account": "inventoros.com 계정",
+      "account": "klikwarehouse.com 계정",
       "connectedAs": "{name}({email})(으)로 연결됨",
-      "connectHint": "계정을 연결하면 보유한 유료 플러그인을 설치할 수 있습니다. inventoros.com 계정 페이지에서 마켓플레이스 연결 토큰을 생성하여 여기에 붙여 넣으세요.",
+      "connectHint": "계정을 연결하면 보유한 유료 플러그인을 설치할 수 있습니다. klikwarehouse.com 계정 페이지에서 마켓플레이스 연결 토큰을 생성하여 여기에 붙여 넣으세요.",
       "tokenLabel": "마켓플레이스 연결 토큰",
       "connect": "연결",
       "connecting": "연결 중...",
       "disconnect": "연결 해제",
-      "confirmDisconnect": "이 워크스페이스와 inventoros.com의 연결을 해제하시겠습니까? 설치된 플러그인은 계속 작동합니다.",
+      "confirmDisconnect": "이 워크스페이스와 klikwarehouse.com의 연결을 해제하시겠습니까? 설치된 플러그인은 계속 작동합니다.",
       "free": "무료",
       "perMonth": "월 {price}",
       "perYear": "연 {price}",
@@ -1488,9 +1488,9 @@
       "update": "{version}(으)로 업데이트",
       "upToDate": "최신 상태",
       "working": "처리 중...",
-      "needsPurchase": "유료 플러그인입니다. inventoros.com에서 구매한 후 계정을 연결하여 설치하세요.",
+      "needsPurchase": "유료 플러그인입니다. klikwarehouse.com에서 구매한 후 계정을 연결하여 설치하세요.",
       "notOwned": "연결된 계정에 아직 이 플러그인이 없습니다.",
-      "viewOnMarketplace": "inventoros.com에서 보기",
+      "viewOnMarketplace": "klikwarehouse.com에서 보기",
       "readOnly": "마켓플레이스를 둘러볼 수 있습니다. 플러그인을 설치하려면 플러그인 관리 권한이 필요합니다."
     },
     "confirmDelete": "\"{name}\"을(를) 정말 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros가 이미 설치되어 있습니다.",
+      "alreadyInstalled": "KlikWareHouse가 이미 설치되어 있습니다.",
       "connectionSuccessful": "데이터베이스에 연결했습니다.",
       "connectionFailed": "데이터베이스 연결 실패: {error}",
       "databaseInstalled": "데이터베이스를 설치했습니다.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "관리자 계정을 만들었습니다."
     },
     "welcome": {
-      "title": "Inventoros에 오신 것을 환영합니다",
+      "title": "KlikWareHouse에 오신 것을 환영합니다",
       "subtitle": "모두를 위한 재고 관리",
       "wizard": "설치 마법사",
-      "description": "Inventoros를 선택해 주셔서 감사합니다! 이 설치 마법사가 설정 과정을 안내해 드립니다.",
+      "description": "KlikWareHouse를 선택해 주셔서 감사합니다! 이 설치 마법사가 설정 과정을 안내해 드립니다.",
       "includes": "설치 과정에 포함된 항목",
       "step1": "시스템 요구사항 확인",
       "step1Desc": "서버가 모든 요구사항을 충족하는지 확인",
@@ -2407,7 +2407,7 @@
       "step3": "관리자 계정 생성",
       "step3Desc": "조직 및 관리자 사용자 생성",
       "step4": "설치 완료",
-      "step4Desc": "설치를 마무리하고 Inventoros 사용 시작",
+      "step4Desc": "설치를 마무리하고 KlikWareHouse 사용 시작",
       "beforeBegin": "시작하기 전에",
       "beforeBeginDesc": "PHP 8.2 이상, MySQL/PostgreSQL 및 필수 PHP 확장이 설치되어 있는지 확인하세요.",
       "startInstallation": "설치 시작",
@@ -2417,7 +2417,7 @@
       "title": "시스템 요구사항",
       "subtitle": "서버 구성 확인 중",
       "allMet": "모든 요구사항을 충족합니다!",
-      "allMetDesc": "서버가 Inventoros를 실행하기 위한 모든 요구사항을 충족합니다.",
+      "allMetDesc": "서버가 KlikWareHouse를 실행하기 위한 모든 요구사항을 충족합니다.",
       "notMet": "일부 요구사항이 충족되지 않았습니다",
       "notMetDesc": "계속하기 전에 아래 문제를 해결해 주세요.",
       "current": "현재",
@@ -2443,7 +2443,7 @@
       "testing": "연결 테스트 중...",
       "dbExistsHint": "계속하기 전에 데이터베이스가 존재하는지 확인하세요. 설치 프로그램이 필요한 테이블을 생성합니다.",
       "resetTitle": "이 데이터베이스에 완료되지 않은 설치의 테이블이 있습니다",
-      "resetWarning": "재설정하면 Inventoros에 속하지 않는 테이블을 포함하여 이 데이터베이스의 모든 테이블이 삭제된 후 다시 설치됩니다. 이 데이터베이스를 Inventoros 전용으로 사용하는 경우에만 계속하세요.",
+      "resetWarning": "재설정하면 KlikWareHouse에 속하지 않는 테이블을 포함하여 이 데이터베이스의 모든 테이블이 삭제된 후 다시 설치됩니다. 이 데이터베이스를 KlikWareHouse 전용으로 사용하는 경우에만 계속하세요.",
       "resetConfirm": "이 데이터베이스의 모든 테이블이 삭제된다는 것을 이해합니다",
       "resetAndInstall": "데이터베이스 재설정 후 설치",
       "installDatabase": "데이터베이스 설치",
@@ -2463,7 +2463,7 @@
       "passwordHint": "최소 8자",
       "confirmPassword": "비밀번호 확인",
       "confirmPasswordHint": "비밀번호를 확인하세요",
-      "accessNote": "이 관리자 계정은 Inventoros 설치에 대한 전체 접근 권한을 갖습니다.",
+      "accessNote": "이 관리자 계정은 KlikWareHouse 설치에 대한 전체 접근 권한을 갖습니다.",
       "completeInstallation": "설치 완료",
       "creatingAccount": "계정 생성 중...",
       "orgNamePlaceholder": "예시 주식회사",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "설치 완료!",
-      "description": "Inventoros가 성공적으로 설치 및 구성되었습니다.",
+      "description": "KlikWareHouse가 성공적으로 설치 및 구성되었습니다.",
       "whatsNext": "다음 단계",
       "step1": "관리자 계정으로 로그인",
       "step2": "제품 카테고리 및 위치 설정",
@@ -2483,7 +2483,7 @@
       "community": "커뮤니티 토론",
       "issues": "문제 보고",
       "goToLogin": "로그인으로 이동",
-      "thankYou": "Inventoros를 선택해 주셔서 감사합니다!"
+      "thankYou": "KlikWareHouse를 선택해 주셔서 감사합니다!"
     }
   },
   "errors": {

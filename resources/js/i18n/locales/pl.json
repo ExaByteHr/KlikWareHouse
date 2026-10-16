@@ -1466,18 +1466,18 @@
       "marketplace": "Marketplace"
     },
     "marketplace": {
-      "intro": "Wtyczki z marketplace Inventoros są podpisane. Każde pobranie jest weryfikowane kluczem marketplace przed instalacją, nawet gdy przesyłanie plików ZIP jest wyłączone.",
-      "notConfigured": "Instalacje z marketplace są wyłączone, ponieważ nie skonfigurowano klucza podpisu marketplace. Ustaw INVENTOROS_MARKETPLACE_PUBLIC_KEY, aby je włączyć.",
+      "intro": "Wtyczki z marketplace KlikWareHouse są podpisane. Każde pobranie jest weryfikowane kluczem marketplace przed instalacją, nawet gdy przesyłanie plików ZIP jest wyłączone.",
+      "notConfigured": "Instalacje z marketplace są wyłączone, ponieważ nie skonfigurowano klucza podpisu marketplace. Ustaw KLIKWAREHOUSE_MARKETPLACE_PUBLIC_KEY, aby je włączyć.",
       "unavailable": "Nie udało się załadować marketplace.",
       "empty": "W marketplace nie ma jeszcze dostępnych wtyczek.",
-      "account": "Konto inventoros.com",
+      "account": "Konto klikwarehouse.com",
       "connectedAs": "Połączono jako {name} ({email})",
-      "connectHint": "Płatne wtyczki, które posiadasz, można zainstalować po połączeniu konta. Utwórz token połączenia z marketplace na stronie konta inventoros.com i wklej go tutaj.",
+      "connectHint": "Płatne wtyczki, które posiadasz, można zainstalować po połączeniu konta. Utwórz token połączenia z marketplace na stronie konta klikwarehouse.com i wklej go tutaj.",
       "tokenLabel": "Token połączenia z marketplace",
       "connect": "Połącz",
       "connecting": "Łączenie...",
       "disconnect": "Rozłącz",
-      "confirmDisconnect": "Odłączyć ten obszar roboczy od inventoros.com? Zainstalowane wtyczki będą nadal działać.",
+      "confirmDisconnect": "Odłączyć ten obszar roboczy od klikwarehouse.com? Zainstalowane wtyczki będą nadal działać.",
       "free": "Bezpłatna",
       "perMonth": "{price} miesięcznie",
       "perYear": "{price} rocznie",
@@ -1488,9 +1488,9 @@
       "update": "Zaktualizuj do {version}",
       "upToDate": "Aktualna",
       "working": "Przetwarzanie...",
-      "needsPurchase": "Płatna wtyczka. Kup ją na inventoros.com, a następnie połącz konto, aby ją zainstalować.",
+      "needsPurchase": "Płatna wtyczka. Kup ją na klikwarehouse.com, a następnie połącz konto, aby ją zainstalować.",
       "notOwned": "Połączone konto nie posiada jeszcze tej wtyczki.",
-      "viewOnMarketplace": "Zobacz na inventoros.com",
+      "viewOnMarketplace": "Zobacz na klikwarehouse.com",
       "readOnly": "Możesz przeglądać marketplace. Instalacja wtyczek wymaga uprawnienia Zarządzanie wtyczkami."
     },
     "confirmDelete": "Czy na pewno chcesz usunąć \"{name}\"? Tej operacji nie można cofnąć.",
@@ -2387,7 +2387,7 @@
   },
   "install": {
     "server": {
-      "alreadyInstalled": "Inventoros jest już zainstalowany.",
+      "alreadyInstalled": "KlikWareHouse jest już zainstalowany.",
       "connectionSuccessful": "Połączono z bazą danych.",
       "connectionFailed": "Nie udało się połączyć z bazą danych: {error}",
       "databaseInstalled": "Baza danych zainstalowana.",
@@ -2395,10 +2395,10 @@
       "adminCreated": "Utworzono konto administratora."
     },
     "welcome": {
-      "title": "Witamy w Inventoros",
+      "title": "Witamy w KlikWareHouse",
       "subtitle": "Zarządzanie magazynem dla każdego",
       "wizard": "Kreator instalacji",
-      "description": "Dziękujemy za wybór Inventoros! Ten kreator instalacji przeprowadzi Cię przez proces konfiguracji.",
+      "description": "Dziękujemy za wybór KlikWareHouse! Ten kreator instalacji przeprowadzi Cię przez proces konfiguracji.",
       "includes": "Proces instalacji obejmuje",
       "step1": "Sprawdzenie wymagań systemowych",
       "step1Desc": "Weryfikacja, czy serwer spełnia wszystkie wymagania",
@@ -2407,7 +2407,7 @@
       "step3": "Utworzenie konta administratora",
       "step3Desc": "Utworzenie organizacji i konta administratora",
       "step4": "Zakończenie konfiguracji",
-      "step4Desc": "Zakończenie instalacji i rozpoczęcie korzystania z Inventoros",
+      "step4Desc": "Zakończenie instalacji i rozpoczęcie korzystania z KlikWareHouse",
       "beforeBegin": "Zanim zaczniesz",
       "beforeBeginDesc": "Upewnij się, że masz zainstalowane PHP 8.2+, MySQL/PostgreSQL i wymagane rozszerzenia PHP.",
       "startInstallation": "Rozpocznij instalację",
@@ -2417,7 +2417,7 @@
       "title": "Wymagania systemowe",
       "subtitle": "Sprawdzanie konfiguracji serwera",
       "allMet": "Wszystkie wymagania spełnione!",
-      "allMetDesc": "Twój serwer spełnia wszystkie wymagania do uruchomienia Inventoros.",
+      "allMetDesc": "Twój serwer spełnia wszystkie wymagania do uruchomienia KlikWareHouse.",
       "notMet": "Niektóre wymagania nie są spełnione",
       "notMetDesc": "Napraw poniższe problemy przed kontynuowaniem.",
       "current": "Aktualna",
@@ -2443,7 +2443,7 @@
       "testing": "Testowanie połączenia...",
       "dbExistsHint": "Upewnij się, że baza danych istnieje. Instalator utworzy niezbędne tabele.",
       "resetTitle": "Ta baza danych zawiera tabele z niedokończonej instalacji",
-      "resetWarning": "Zresetowanie usuwa wszystkie tabele w tej bazie danych, również te, które nie należą do Inventoros, a następnie instaluje ponownie. Kontynuuj tylko wtedy, gdy ta baza danych służy wyłącznie Inventoros.",
+      "resetWarning": "Zresetowanie usuwa wszystkie tabele w tej bazie danych, również te, które nie należą do KlikWareHouse, a następnie instaluje ponownie. Kontynuuj tylko wtedy, gdy ta baza danych służy wyłącznie KlikWareHouse.",
       "resetConfirm": "Rozumiem, że wszystkie tabele w tej bazie danych zostaną usunięte",
       "resetAndInstall": "Zresetuj bazę danych i zainstaluj",
       "installDatabase": "Zainstaluj bazę danych",
@@ -2463,7 +2463,7 @@
       "passwordHint": "Minimum 8 znaków",
       "confirmPassword": "Potwierdź hasło",
       "confirmPasswordHint": "Potwierdź swoje hasło",
-      "accessNote": "To konto administratora będzie miało pełny dostęp do instalacji Inventoros.",
+      "accessNote": "To konto administratora będzie miało pełny dostęp do instalacji KlikWareHouse.",
       "completeInstallation": "Zakończ instalację",
       "creatingAccount": "Tworzenie konta...",
       "orgNamePlaceholder": "Przykładowa Firma Sp. z o.o.",
@@ -2472,7 +2472,7 @@
     },
     "complete": {
       "title": "Instalacja zakończona!",
-      "description": "Inventoros został pomyślnie zainstalowany i skonfigurowany.",
+      "description": "KlikWareHouse został pomyślnie zainstalowany i skonfigurowany.",
       "whatsNext": "Co dalej?",
       "step1": "Zaloguj się kontem administratora",
       "step2": "Skonfiguruj kategorie produktów i lokalizacje",
@@ -2483,7 +2483,7 @@
       "community": "Dyskusje społeczności",
       "issues": "Zgłoś problemy",
       "goToLogin": "Przejdź do logowania",
-      "thankYou": "Dziękujemy za wybór Inventoros!"
+      "thankYou": "Dziękujemy za wybór KlikWareHouse!"
     }
   },
   "errors": {
