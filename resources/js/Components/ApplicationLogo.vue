@@ -1,3 +1,3 @@
 <template>
-    <img src="/images/brand/inventoros_icon_transparent_512.png" alt="KlikWareHouse" />
+    <img src="/images/brand/klikured_icon_transparent_512.png" alt="KlikWareHouse" />
 </template>
