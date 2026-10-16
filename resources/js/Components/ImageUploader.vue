@@ -106,12 +106,17 @@ const formatFileSize = (bytes) => {
             @dragover.prevent="isDragging = true"
             @dragleave.prevent="isDragging = false"
             :class="[
-                'border-2 border-dashed rounded-lg p-6 text-center transition cursor-pointer',
+                'border-2 border-dashed rounded-lg p-6 text-center transition cursor-pointer ds-focus-ring',
                 isDragging
                     ? 'border-brand bg-brand/10'
                     : 'border-gray-300 dark:border-border-subtle bg-gray-50 dark:bg-surface-canvas hover:border-brand'
             ]"
             @click="$refs.fileInput.click()"
+            @keydown.enter.prevent="$refs.fileInput.click()"
+            @keydown.space.prevent="$refs.fileInput.click()"
+            tabindex="0"
+            role="button"
+            :aria-label="t('components.imageUploader.dragDrop')"
         >
             <input
                 ref="fileInput"
@@ -160,16 +165,17 @@ const formatFileSize = (bytes) => {
                     </div>
 
                     <!-- Overlay on hover -->
-                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 focus-within:bg-opacity-50">
                         <!-- Move Left -->
                         <button
                             v-if="index > 0"
                             @click="moveImage(index, index - 1)"
                             type="button"
-                            class="p-2 bg-white dark:bg-surface-raised rounded-full hover:bg-gray-100 dark:hover:bg-surface-canvas transition"
+                            class="p-2 bg-white dark:bg-surface-raised rounded-full hover:bg-gray-100 dark:hover:bg-surface-canvas transition ds-focus-ring"
                             :title="t('components.imageUploader.moveLeft')"
+                            :aria-label="t('components.imageUploader.moveLeft')"
                         >
-                            <svg class="w-5 h-5 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
@@ -178,10 +184,11 @@ const formatFileSize = (bytes) => {
                         <button
                             @click="removeImage(index)"
                             type="button"
-                            class="p-2 bg-red-600 rounded-full hover:bg-red-700 transition"
+                            class="p-2 bg-red-600 rounded-full hover:bg-red-700 transition ds-focus-ring"
                             :title="t('components.imageUploader.remove')"
+                            :aria-label="t('components.imageUploader.remove')"
                         >
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
                         </button>
@@ -191,10 +198,11 @@ const formatFileSize = (bytes) => {
                             v-if="index < images.length - 1"
                             @click="moveImage(index, index + 1)"
                             type="button"
-                            class="p-2 bg-white dark:bg-surface-raised rounded-full hover:bg-gray-100 dark:hover:bg-surface-canvas transition"
+                            class="p-2 bg-white dark:bg-surface-raised rounded-full hover:bg-gray-100 dark:hover:bg-surface-canvas transition ds-focus-ring"
                             :title="t('components.imageUploader.moveRight')"
+                            :aria-label="t('components.imageUploader.moveRight')"
                         >
-                            <svg class="w-5 h-5 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </button>
