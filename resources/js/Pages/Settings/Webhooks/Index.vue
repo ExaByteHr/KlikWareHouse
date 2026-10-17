@@ -292,7 +292,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                         <h3 class="text-base font-semibold text-text-primary">
                             {{ t('settings.webhooks.createWebhook') }}
                         </h3>
-                        <button @click="closeCreateModal" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary">
+                        <button @click="closeCreateModal" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring" :aria-label="t('common.cancel')">
                             <X :size="18" />
                         </button>
                     </div>
@@ -405,7 +405,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                         <h3 class="text-base font-semibold text-text-primary">
                             {{ t('settings.webhooks.editWebhook') }}
                         </h3>
-                        <button @click="closeEditModal" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary">
+                        <button @click="closeEditModal" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring" :aria-label="t('common.cancel')">
                             <X :size="18" />
                         </button>
                     </div>
