@@ -28,9 +28,12 @@ const props = defineProps({
 
 const orders = computed(() => props.customer.orders || []);
 
-const totalSpend = computed(() =>
-    orders.value.reduce((sum, o) => sum + parseFloat(o.total || 0), 0)
-);
+const totalSpend = computed(() => {
+    if (props.customer.orders_sum_total !== undefined && props.customer.orders_sum_total !== null) {
+        return parseFloat(props.customer.orders_sum_total);
+    }
+    return orders.value.reduce((sum, o) => sum + parseFloat(o.total || 0), 0);
+});
 
 const formatCurrency = (value) => formatMoney(value, props.customer.currency);
 
@@ -139,7 +142,7 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium tracking-tight text-t
         <section class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <StatTile
                 :label="t('customers.show.recentOrders')"
-                :value="orders.length"
+                :value="customer.orders_count ?? orders.length"
                 icon-tone="brand"
             >
                 <template #icon><ShoppingCart :size="18" /></template>
@@ -245,7 +248,7 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium tracking-tight text-t
                                 </thead>
                                 <tbody>
                                     <tr
-                                        v-for="order in orders.slice(0, 5)"
+                                        v-for="order in orders"
                                         :key="order.id"
                                         class="border-b border-border-subtle transition-colors last:border-b-0 hover:bg-surface-overlay"
                                     >
