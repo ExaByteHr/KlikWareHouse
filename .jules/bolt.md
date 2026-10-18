@@ -1,0 +1,3 @@
+## 2026-10-18 - Optimize HasProductVariants
+**Learning:** In Laravel Eloquent traits like `HasProductVariants`, aggregate queries such as `$this->variants()->sum('stock')` and `$this->variants()->exists()` issue N+1 queries if called in a loop, even when the relationship `variants` is already eager loaded on the model.
+**Action:** Always check `$this->relationLoaded('variants')` before issuing an aggregate query. If loaded, use the in-memory Eloquent Collection (e.g., `$this->variants->sum('stock')`) to avoid redundant database calls. Ensure to handle edge cases where the eager loaded collection is empty using `$this->variants->isNotEmpty()`.

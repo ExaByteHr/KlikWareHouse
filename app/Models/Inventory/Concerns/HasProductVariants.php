@@ -57,9 +57,15 @@ trait HasProductVariants
             return (int) $this->attributes['effective_stock'];
         }
 
-        if ($this->has_variants && $this->variants()->exists()) {
-            // SUM() is a numeric string on MySQL/PostgreSQL; the return type is int.
-            return (int) $this->variants()->where('is_active', true)->sum('stock');
+        if ($this->has_variants) {
+            if ($this->relationLoaded('variants')) {
+                if ($this->variants->isNotEmpty()) {
+                    return (int) $this->variants->where('is_active', true)->sum('stock');
+                }
+            } elseif ($this->variants()->exists()) {
+                // SUM() is a numeric string on MySQL/PostgreSQL; the return type is int.
+                return (int) $this->variants()->where('is_active', true)->sum('stock');
+            }
         }
 
         return (int) $this->stock;
@@ -72,11 +78,19 @@ trait HasProductVariants
      */
     public function getPriceRangeAttribute(): array
     {
-        if (! $this->has_variants || ! $this->variants()->exists()) {
+        if (! $this->has_variants) {
             return ['min' => $this->price, 'max' => $this->price];
         }
 
-        $variants = $this->variants()->whereNotNull('price')->get();
+        if ($this->relationLoaded('variants')) {
+            $variants = $this->variants->whereNotNull('price');
+        } else {
+            if (! $this->variants()->exists()) {
+                return ['min' => $this->price, 'max' => $this->price];
+            }
+            $variants = $this->variants()->whereNotNull('price')->get();
+        }
+
         if ($variants->isEmpty()) {
             return ['min' => $this->price, 'max' => $this->price];
         }
@@ -94,6 +108,10 @@ trait HasProductVariants
      */
     public function findVariant(array $optionValues): ?ProductVariant
     {
+        if ($this->relationLoaded('variants')) {
+            return $this->variants->first(fn ($v) => $v->matchesOptions($optionValues));
+        }
+
         return $this->variants()->get()->first(fn ($v) => $v->matchesOptions($optionValues));
     }
 
