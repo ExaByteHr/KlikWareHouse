@@ -97,8 +97,11 @@ class CustomerController extends Controller
             abort(404);
         }
 
+        $customer->loadCount('orders');
+        $customer->loadSum('orders', 'total');
+
         // Newest first: the page lists the most recent orders.
-        $customer->load(['orders' => fn ($query) => $query->latest('order_date')->latest('id')]);
+        $customer->load(['orders' => fn ($query) => $query->latest('order_date')->latest('id')->limit(5)]);
 
         $organization = $customer->organization;
 
