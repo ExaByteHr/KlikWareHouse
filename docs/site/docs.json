@@ -1,5 +1,6 @@
 {
     "sections": [
+        { "slug": "inventory-management", "label": "Inventory Management", "anchor": "inventory-management", "group": "Use", "description": "Manage products, variants, serial/batch tracking, warehouses, and stock movements." },
         { "slug": "getting-started", "label": "Getting Started", "anchor": "getting-started", "group": "Get started", "description": "System requirements, the web installer and how to choose an installation method." },
         { "slug": "installation-cpanel", "label": "Install on cPanel", "anchor": "installation-cpanel", "group": "Installation", "description": "Install the pre-built release package on cPanel shared hosting, step by step." },
         { "slug": "installation-vps", "label": "Install on a VPS", "anchor": "installation-vps", "group": "Installation", "description": "Install from source on Ubuntu, Debian or CentOS / RHEL with Nginx and PHP-FPM." },
