@@ -286,7 +286,7 @@ const secondaryStats = () => [
                                         <Badge :variant="orderStatusVariant(order.status)" size="sm" dot>{{ orderStatusLabel(order.status, { t, te }) }}</Badge>
                                     </div>
                                     <p class="mt-0.5 truncate text-xs text-text-tertiary">
-                                        {{ order.customer_name }} · {{ t('dashboard.itemsCount', order.items.length) }}
+                                        {{ order.customer_name }} · {{ t('dashboard.itemsCount', order.items_count ?? order.items?.length || 0) }}
                                     </p>
                                 </div>
                                 <div class="shrink-0 text-right">

@@ -188,8 +188,10 @@ class DashboardController extends Controller
         // Recent orders: the ones most recently entered (created_at), so a
         // backdated or imported order just added still shows; each row
         // displays its order date.
+        // [Performance Optimization]: Replacing with('items') with withCount('items')
+        // to avoid eager loading O(N) relations only to display items count, reducing memory footprint.
         $recentOrders = ! $canViewOrders ? collect() : Order::where('organization_id', $user->organization_id)
-            ->with('items')
+            ->withCount('items')
             ->latest('created_at')
             ->latest('id')
             ->limit(5)
