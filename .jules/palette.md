@@ -1,3 +1,6 @@
+## 2023-10-24 - Standardizing Focus Rings
+**Learning:** This app uses a custom Tailwind class `ds-focus-ring` for standardizing focus indicators across interactive components.
+**Action:** Always append `ds-focus-ring` instead of default Tailwind focus rings (`focus:ring`, `focus-visible:ring`) when adding or modifying interactive elements to maintain visual consistency.
 ## 2024-05-14 - Keyboard Access in Image Components
 **Learning:** Found that custom file upload areas (`div` elements) and zoom/navigation controls in `ImageGallery` lacked proper semantic tags (like `button`), missing ARIA labels, and had hidden controls on focus. Using `ds-focus-ring` with correct focus utilities like `focus-within` enables proper keyboard navigation without breaking visual designs.
 **Action:** Consistently replace clickable `div` elements with `button` tags with `aria-label`s, add `ds-focus-ring` to interactive elements, and consider adding keyboard shortcuts (`@keydown.enter`) with tabindex="0" and `role="button"` for custom clickable zones.
