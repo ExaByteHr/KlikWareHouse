@@ -138,8 +138,9 @@ const adjustStock = async () => {
             <button
                 type="button"
                 @click="openPopover('increase')"
-                class="p-1 text-green-600 dark:text-green-400 hover:bg-green-100 dark:hover:bg-green-900/30 rounded transition"
+                class="p-1 text-green-600 dark:text-green-400 hover:bg-green-100 dark:hover:bg-green-900/30 rounded transition ds-focus-ring"
                 :title="t('components.stockAdjuster.increaseStock')"
+                :aria-label="t('components.stockAdjuster.increaseStock')"
             >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
@@ -148,8 +149,9 @@ const adjustStock = async () => {
             <button
                 type="button"
                 @click="openPopover('decrease')"
-                class="p-1 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/30 rounded transition"
+                class="p-1 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/30 rounded transition ds-focus-ring"
                 :title="t('components.stockAdjuster.decreaseStock')"
+                :aria-label="t('components.stockAdjuster.decreaseStock')"
             >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
