@@ -48,3 +48,21 @@ Before completing a task or submitting a PR:
 3. If frontend files (`resources/js/`, `.vue`, css) changed: run `npm run build`
 4. If migrations changed: test rolling back and reapplying (`php artisan migrate:rollback` followed by `php artisan migrate`)
 
+## Documentation Reference
+The `docs/` folder contains comprehensive documentation about the application's architecture, features, APIs, and roadmap. Always consult these resources when working on related tasks.
+
+### Core Architecture & APIs
+- **Plugin Development (`docs/PLUGIN_DEVELOPMENT.md`)**: The primary guide for building, testing, and publishing WordPress-style plugins for Inventoros. **Always review this before starting any plugin-related tasks.**
+- **REST & GraphQL API (`docs/api/`)**: Read `docs/api/README.md` for details on authentication, rate limits, and an overview of the REST endpoints and GraphQL support. The `docs/api/openapi.yaml` file contains the full OpenAPI 3.0 specification.
+- **MCP Server (`docs/mcp/README.md`)**: Documentation on the built-in Model Context Protocol server.
+
+### Application Features
+- **Features (`docs/features/`)**: Contains detailed guides on core application functionality, such as barcode scanning, email notifications, import/export, and warehouses.
+
+### Roadmap & Archives
+- **Roadmap (`docs/archive/ROADMAP.md`)**: The current development roadmap, containing a checklist of planned features grouped by phase.
+  - *Note: Check this file for planned features, but be aware that it's in the `archive/` folder, so some completed features might not be checked off, or priorities might have shifted. When you encounter incomplete tasks, consider whether they should be implemented or if you should instruct future agents to review them.*
+- **Audits & Progress (`docs/archive/`)**: Look here for historical context on audits and implemented features (e.g., `IMPLEMENTATION_SUMMARY.md`, `AUDIT_REPORT.md`).
+
+### End-User Guides
+- **Site Documentation (`docs/site/`)**: Contains the JSON structure (`docs.json`) and markdown content for the public-facing documentation site, covering installation, updates, and feature usage.
