@@ -194,7 +194,7 @@ const selectClass =
                     </div>
                 </template>
                 <template #cell-items="{ row }">
-                    <span class="tabular-nums text-text-secondary">{{ row.items.length }}</span>
+                    <span class="tabular-nums text-text-secondary">{{ row.items_count }}</span>
                 </template>
                 <template #cell-total="{ row }">
                     <span class="font-medium tabular-nums text-text-primary">{{ formatCurrency(row.total, row.currency) }}</span>

@@ -4,3 +4,6 @@
 ## 2026-10-16 - Eager Loaded Relationships Masking Aggregation Needs
 **Learning:** In Laravel/Inertia applications, developers sometimes unconditionally eager-load entire `HasMany` relationships into memory just to calculate derived statistics (like `reduce` for total sums or `.length` for counts) on the frontend. If the UI only lists a small subset (e.g., 5 items) but the relationship can grow infinitely (like a customer's `orders`), this causes a hidden O(n) memory and data-transfer bottleneck.
 **Action:** Always check `fn ($query) => $query->latest()->limit(N)` patterns. If the frontend consumes more items for aggregation than the limit allows, switch to database-level aggregations (`loadCount`, `loadSum`) and keep the `limit(N)` strictly for display models to cap memory usage to O(1).
+## 2026-10-20 - Index views with counts
+**Learning:** In Laravel controllers, using `withCount` instead of unconditionally eager loading a relationship on index queries reduces memory overhead and improves performance on index list pages.
+**Action:** When only an aggregate count is needed (e.g. `items.length` on frontend), update the query to use `withCount('items')` and the frontend reference to `items_count`.
