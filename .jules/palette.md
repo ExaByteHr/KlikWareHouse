@@ -7,3 +7,6 @@
 ## 2024-05-18 - Added focus states and aria labels to modal close buttons
 **Learning:** Found an accessibility issue pattern where modal close buttons with only an `<X />` icon were missing `aria-label` attributes for screen readers and `ds-focus-ring` classes for keyboard navigation.
 **Action:** When adding or reviewing modal components with icon-only close buttons, always verify that they include an `aria-label` (using translation strings like `t('common.cancel')`) and the standard `ds-focus-ring` class.
+## 2024-05-19 - Standardized Action Button Focus Rings
+**Learning:** Found an accessibility issue pattern where table/list action buttons (like view, edit, delete icons) in various index pages (e.g. Products, Orders) were missing the `ds-focus-ring` class for keyboard navigation.
+**Action:** When adding or reviewing action icon buttons in tables/lists, always ensure they include the `ds-focus-ring` class to provide a visible focus indicator for keyboard users.

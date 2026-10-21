@@ -310,7 +310,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                     type="button"
                                     @click="removeItem(index)"
                                     :disabled="form.items.length <= 1"
-                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-30"
+                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-30 ds-focus-ring"
                                 >
                                     <Trash2 :size="16" />
                                 </button>

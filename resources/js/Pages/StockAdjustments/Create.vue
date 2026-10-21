@@ -166,7 +166,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                     v-if="$page.props.auth.permissions.includes('stock_adjustments.create')"
                                     type="button"
                                     @click="openScanner"
-                                    class="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1.5 text-text-tertiary transition-colors hover:text-brand"
+                                    class="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1.5 text-text-tertiary transition-colors hover:text-brand ds-focus-ring"
                                     :title="t('stockAdjustments.create.scanBarcode')"
                                 >
                                     <ScanLine :size="18" />

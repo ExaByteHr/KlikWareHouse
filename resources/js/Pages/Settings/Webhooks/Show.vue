@@ -372,7 +372,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                                 <div class="flex items-center justify-end gap-1">
                                                     <button
                                                         @click.stop="toggleDeliveryExpand(delivery.id)"
-                                                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary"
+                                                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring"
                                                         :title="expandedDelivery === delivery.id ? t('common.collapse') : t('common.expand')"
                                                     >
                                                         <ChevronDown :size="16" :class="['transition-transform', expandedDelivery === delivery.id ? 'rotate-180' : '']" />
@@ -380,7 +380,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                                     <button
                                                         v-if="delivery.status === 'failed'"
                                                         @click.stop="retryDelivery(delivery)"
-                                                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand"
+                                                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring"
                                                         :title="t('common.retry')"
                                                     >
                                                         <RotateCcw :size="16" />

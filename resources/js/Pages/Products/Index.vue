@@ -335,11 +335,11 @@ const thClass =
                         <td class="px-4 py-3 font-medium tabular-nums text-text-primary">{{ formatCurrency(product.display_price ?? product.price, product.currency) }}</td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('products.show', product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-brand" :title="t('common.view')"><Eye :size="16" /></Link>
-                                <button v-if="product.barcode || product.sku" @click="printBarcode(product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary" :title="t('products.printBarcode')"><Barcode :size="16" /></button>
-                                <button @click="duplicateProduct(product)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-warning" :title="t('products.duplicate')"><Copy :size="16" /></button>
-                                <Link v-if="canVisit('products.edit')" :href="route('products.edit', product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-success" :title="t('common.edit')"><Pencil :size="16" /></Link>
-                                <button v-if="hasPermission('delete_products')" @click="deleteProduct(product)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger" :title="t('common.delete')"><Trash2 :size="16" /></button>
+                                <Link :href="route('products.show', product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-brand ds-focus-ring" :title="t('common.view')"><Eye :size="16" /></Link>
+                                <button v-if="product.barcode || product.sku" @click="printBarcode(product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary ds-focus-ring" :title="t('products.printBarcode')"><Barcode :size="16" /></button>
+                                <button @click="duplicateProduct(product)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-warning ds-focus-ring" :title="t('products.duplicate')"><Copy :size="16" /></button>
+                                <Link v-if="canVisit('products.edit')" :href="route('products.edit', product.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-success ds-focus-ring" :title="t('common.edit')"><Pencil :size="16" /></Link>
+                                <button v-if="hasPermission('delete_products')" @click="deleteProduct(product)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger ds-focus-ring" :title="t('common.delete')"><Trash2 :size="16" /></button>
                             </div>
                         </td>
                     </tr>

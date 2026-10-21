@@ -373,7 +373,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                 <button
                                     type="button"
                                     @click="removeItem(index)"
-                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger"
+                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger ds-focus-ring"
                                     :title="t('orders.edit.removeItem')"
                                 >
                                     <Trash2 :size="16" />

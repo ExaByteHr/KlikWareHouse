@@ -191,7 +191,7 @@ const thClass =
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('stock-audits.show', audit.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('common.view')"><Eye :size="16" /></Link>
+                                <Link :href="route('stock-audits.show', audit.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :title="t('common.view')"><Eye :size="16" /></Link>
                             </div>
                         </td>
                     </tr>

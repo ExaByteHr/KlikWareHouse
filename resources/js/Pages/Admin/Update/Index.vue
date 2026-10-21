@@ -366,14 +366,14 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium tracking-tight text-t
                                             <button
                                                 @click="restoreBackup(backup.filename)"
                                                 :disabled="isRestoring"
-                                                class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-brand disabled:opacity-50"
+                                                class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-brand disabled:opacity-50 ds-focus-ring"
                                                 :title="t('admin.update.restore')"
                                             >
                                                 <RotateCcw :size="16" />
                                             </button>
                                             <button
                                                 @click="deleteBackup(backup.filename)"
-                                                class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger"
+                                                class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger ds-focus-ring"
                                                 :title="t('common.delete')"
                                             >
                                                 <Trash2 :size="16" />
