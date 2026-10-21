@@ -192,7 +192,7 @@ const labelClass = 'mb-1 block text-xs font-medium text-text-secondary';
                     </a>
                     <button
                         @click="openEditModal(location)"
-                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success"
+                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring"
                         :aria-label="t('common.edit')"
                         :title="t('common.edit')"
                     >
@@ -200,7 +200,7 @@ const labelClass = 'mb-1 block text-xs font-medium text-text-secondary';
                     </button>
                     <button
                         @click="deleteLocation(location)"
-                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-50"
+                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-50 ds-focus-ring"
                         :disabled="location.products_count > 0"
                         :aria-label="t('common.delete')"
                         :title="t('common.delete')"
@@ -262,7 +262,7 @@ const labelClass = 'mb-1 block text-xs font-medium text-text-secondary';
                         </h3>
                         <button
                             @click="showCreateModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring"
                             :aria-label="t('locations.close')"
                         >
                             <X :size="18" />
@@ -350,7 +350,7 @@ const labelClass = 'mb-1 block text-xs font-medium text-text-secondary';
                         </h3>
                         <button
                             @click="showEditModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring"
                             :aria-label="t('locations.close')"
                         >
                             <X :size="18" />

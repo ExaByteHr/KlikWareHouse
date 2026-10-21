@@ -582,7 +582,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                         </h3>
                         <button
                             @click="showCategoryModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary ds-focus-ring"
                         >
                             <X :size="18" />
                         </button>
@@ -643,7 +643,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                         </h3>
                         <button
                             @click="showLocationModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-text-primary ds-focus-ring"
                         >
                             <X :size="18" />
                         </button>

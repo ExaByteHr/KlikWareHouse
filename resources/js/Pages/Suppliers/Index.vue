@@ -158,9 +158,9 @@ const thClass =
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('suppliers.show', supplier.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('common.view')"><Eye :size="16" /></Link>
-                                <Link v-if="canVisit('suppliers.edit')" :href="route('suppliers.edit', supplier.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('common.edit')"><Pencil :size="16" /></Link>
-                                <button v-if="hasPermission('delete_suppliers')" @click="deleteSupplier(supplier)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :title="t('common.delete')"><Trash2 :size="16" /></button>
+                                <Link :href="route('suppliers.show', supplier.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :title="t('common.view')"><Eye :size="16" /></Link>
+                                <Link v-if="canVisit('suppliers.edit')" :href="route('suppliers.edit', supplier.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :title="t('common.edit')"><Pencil :size="16" /></Link>
+                                <button v-if="hasPermission('delete_suppliers')" @click="deleteSupplier(supplier)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger ds-focus-ring" :title="t('common.delete')"><Trash2 :size="16" /></button>
                             </div>
                         </td>
                     </tr>

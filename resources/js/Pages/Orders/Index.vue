@@ -213,9 +213,9 @@ const selectClass =
                 </template>
                 <template #cell-actions="{ row }">
                     <div class="flex items-center justify-end gap-1">
-                        <Link :href="route('orders.show', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :aria-label="t('common.view')"><Eye :size="16" /></Link>
-                        <Link v-if="canVisit('orders.edit')" :href="route('orders.edit', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :aria-label="t('common.edit')"><Pencil :size="16" /></Link>
-                        <button v-if="hasPermission('delete_orders')" type="button" @click="deleteOrder(row)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :aria-label="t('common.delete')"><Trash2 :size="16" /></button>
+                        <Link :href="route('orders.show', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :aria-label="t('common.view')"><Eye :size="16" /></Link>
+                        <Link v-if="canVisit('orders.edit')" :href="route('orders.edit', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :aria-label="t('common.edit')"><Pencil :size="16" /></Link>
+                        <button v-if="hasPermission('delete_orders')" type="button" @click="deleteOrder(row)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger ds-focus-ring" :aria-label="t('common.delete')"><Trash2 :size="16" /></button>
                     </div>
                 </template>
                 <template #empty>

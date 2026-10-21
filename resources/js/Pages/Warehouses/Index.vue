@@ -187,13 +187,13 @@ const thClass =
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('warehouses.show', warehouse.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('common.view')"><Eye :size="16" /></Link>
-                                <Link v-if="hasPermission('edit_warehouses')" :href="route('warehouses.edit', warehouse.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('common.edit')"><Pencil :size="16" /></Link>
+                                <Link :href="route('warehouses.show', warehouse.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :title="t('common.view')"><Eye :size="16" /></Link>
+                                <Link v-if="hasPermission('edit_warehouses')" :href="route('warehouses.edit', warehouse.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :title="t('common.edit')"><Pencil :size="16" /></Link>
                                 <button
                                     v-if="hasPermission('edit_warehouses') && !warehouse.is_default"
                                     type="button"
                                     @click="makeDefault(warehouse)"
-                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand"
+                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring"
                                     :title="t('warehouses.default.makeDefault')"
                                     :aria-label="t('warehouses.default.makeDefault')"
                                 >
@@ -202,7 +202,7 @@ const thClass =
                                 <button
                                     v-if="hasPermission('delete_warehouses')"
                                     @click="deleteWarehouse(warehouse)"
-                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger"
+                                    class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger ds-focus-ring"
                                     :title="t('common.delete')"
                                     :disabled="warehouse.is_default"
                                     :class="{ 'cursor-not-allowed opacity-50': warehouse.is_default }"

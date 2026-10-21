@@ -87,8 +87,8 @@ const thClass = 'px-4 py-2.5 text-left text-xs font-medium text-text-secondary';
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('users.show', user.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('common.view')"><Eye :size="16" /></Link>
-                                <Link v-if="canVisit('users.edit')" :href="route('users.edit', user.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('common.edit')"><Pencil :size="16" /></Link>
+                                <Link :href="route('users.show', user.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :title="t('common.view')"><Eye :size="16" /></Link>
+                                <Link v-if="canVisit('users.edit')" :href="route('users.edit', user.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :title="t('common.edit')"><Pencil :size="16" /></Link>
                             </div>
                         </td>
                     </tr>

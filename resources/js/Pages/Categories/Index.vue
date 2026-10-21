@@ -149,7 +149,7 @@ const inputClass =
                     <button
                         type="button"
                         @click="openEditModal(category)"
-                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success"
+                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring"
                         :aria-label="t('common.edit')"
                     >
                         <Pencil :size="16" />
@@ -158,7 +158,7 @@ const inputClass =
                         type="button"
                         @click="deleteCategory(category)"
                         :disabled="category.products_count > 0"
-                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-text-tertiary"
+                        class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-text-tertiary ds-focus-ring"
                         :aria-label="t('common.delete')"
                     >
                         <Trash2 :size="16" />
@@ -220,7 +220,7 @@ const inputClass =
                         <button
                             type="button"
                             @click="showCreateModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring"
                             :aria-label="t('common.cancel')"
                         >
                             <X :size="18" />
@@ -274,7 +274,7 @@ const inputClass =
                         <button
                             type="button"
                             @click="showEditModal = false"
-                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary"
+                            class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-text-primary ds-focus-ring"
                             :aria-label="t('common.cancel')"
                         >
                             <X :size="18" />

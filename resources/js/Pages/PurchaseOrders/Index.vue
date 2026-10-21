@@ -185,10 +185,10 @@ const selectClass =
                 </template>
                 <template #cell-actions="{ row }">
                     <div class="flex items-center justify-end gap-1">
-                        <Link :href="route('purchase-orders.show', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :aria-label="t('common.view')" :title="t('common.view')"><Eye :size="16" /></Link>
-                        <Link v-if="(row.status === 'draft') && canVisit('purchase-orders.edit')" :href="route('purchase-orders.edit', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :aria-label="t('common.edit')" :title="t('common.edit')"><Pencil :size="16" /></Link>
-                        <Link v-if="(row.status === 'sent' || row.status === 'partial') && canVisit('purchase-orders.receive')" :href="route('purchase-orders.receive', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('purchaseOrders.receive.receive')"><PackageCheck :size="16" /></Link>
-                        <button v-if="row.status === 'draft' && hasPermission('delete_purchase_orders')" type="button" @click="deletePO(row)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :aria-label="t('common.delete')" :title="t('common.delete')"><Trash2 :size="16" /></button>
+                        <Link :href="route('purchase-orders.show', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand ds-focus-ring" :aria-label="t('common.view')" :title="t('common.view')"><Eye :size="16" /></Link>
+                        <Link v-if="(row.status === 'draft') && canVisit('purchase-orders.edit')" :href="route('purchase-orders.edit', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :aria-label="t('common.edit')" :title="t('common.edit')"><Pencil :size="16" /></Link>
+                        <Link v-if="(row.status === 'sent' || row.status === 'partial') && canVisit('purchase-orders.receive')" :href="route('purchase-orders.receive', row.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success ds-focus-ring" :title="t('purchaseOrders.receive.receive')"><PackageCheck :size="16" /></Link>
+                        <button v-if="row.status === 'draft' && hasPermission('delete_purchase_orders')" type="button" @click="deletePO(row)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger ds-focus-ring" :aria-label="t('common.delete')" :title="t('common.delete')"><Trash2 :size="16" /></button>
                     </div>
                 </template>
                 <template #empty>

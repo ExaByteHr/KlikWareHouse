@@ -338,7 +338,7 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                                 <label class="mb-1 block text-[11px] text-text-tertiary">{{ t('common.subtotal') }}</label>
                                 <p class="font-semibold tabular-nums text-text-primary">{{ formatCurrency(item.quantity * item.unit_cost) }}</p>
                             </div>
-                            <button type="button" @click="removeItem(index)" class="mt-4 rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger"><Trash2 :size="16" /></button>
+                            <button type="button" @click="removeItem(index)" class="mt-4 rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-sunken hover:text-status-danger ds-focus-ring"><Trash2 :size="16" /></button>
                         </div>
                     </div>
 
