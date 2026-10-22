@@ -1,0 +1,4 @@
+💡 What: Wrapped `variants()->count()` inside `ProductResource` in a lazy-evaluated Closure and utilized in-memory count when the relationship is already loaded.
+🎯 Why: To fix an N+1 issue where a count query was unconditionally executed for every product resource, regardless of the `has_variants` flag or if the relationship was already eager-loaded.
+📊 Impact: Reduces database queries from 1 to 0 per item for resources that already load the `variants` relationship or have `has_variants` set to false, saving N duplicate queries when paginating products.
+🔬 Measurement: Verify by executing a query fetching products and passing them through `ProductResource::collection($products)->toArray(request())` with `DB::enableQueryLog()`. It will drop from O(N) queries to 0.

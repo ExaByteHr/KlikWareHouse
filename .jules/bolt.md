@@ -4,3 +4,7 @@
 ## 2026-10-16 - Eager Loaded Relationships Masking Aggregation Needs
 **Learning:** In Laravel/Inertia applications, developers sometimes unconditionally eager-load entire `HasMany` relationships into memory just to calculate derived statistics (like `reduce` for total sums or `.length` for counts) on the frontend. If the UI only lists a small subset (e.g., 5 items) but the relationship can grow infinitely (like a customer's `orders`), this causes a hidden O(n) memory and data-transfer bottleneck.
 **Action:** Always check `fn ($query) => $query->latest()->limit(N)` patterns. If the frontend consumes more items for aggregation than the limit allows, switch to database-level aggregations (`loadCount`, `loadSum`) and keep the `limit(N)` strictly for display models to cap memory usage to O(1).
+
+## 2026-10-22 - Prevent Eager Evaluation in Resource when() conditions
+**Learning:** In Laravel API Resources, the `when()` method evaluates its arguments immediately unless the second argument is a Closure. If a query like `$this->variants()->count()` is passed as the second argument, it will execute an N+1 query unconditionally even if the condition is false.
+**Action:** Always wrap expensive or database-dependent operations in a Closure (e.g. `fn () => $this->relationLoaded('variants') ? $this->variants->count() : $this->variants()->count()`) when passing them to the `$this->when()` method inside API Resources.
