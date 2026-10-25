@@ -50,7 +50,7 @@ class ProductResource extends JsonResource
             'is_out_of_stock' => $this->isOutOfStock(),
             'profit' => $this->profit,
             'profit_margin' => $this->profit_margin,
-            'price_range' => $this->when($this->has_variants, $this->price_range),
+            'price_range' => $this->when($this->has_variants, fn () => $this->price_range),
             'category' => new ProductCategoryResource($this->whenLoaded('category')),
             'location' => new ProductLocationResource($this->whenLoaded('location')),
             'options' => ProductOptionResource::collection($this->whenLoaded('options')),
@@ -65,7 +65,7 @@ class ProductResource extends JsonResource
                 'minimum_order_quantity' => $supplier->pivot->minimum_order_quantity,
                 'is_primary' => (bool) $supplier->pivot->is_primary,
             ])->values()),
-            'variants_count' => $this->when($this->has_variants, $this->variants()->count()),
+            'variants_count' => $this->when($this->has_variants, fn () => $this->relationLoaded('variants') ? $this->variants->count() : $this->variants()->count()),
             'created_at' => $this->created_at?->toIso8601String(),
             'updated_at' => $this->updated_at?->toIso8601String(),
         ];
