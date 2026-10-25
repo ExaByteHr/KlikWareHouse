@@ -7,3 +7,6 @@
 ## 2024-05-18 - Added focus states and aria labels to modal close buttons
 **Learning:** Found an accessibility issue pattern where modal close buttons with only an `<X />` icon were missing `aria-label` attributes for screen readers and `ds-focus-ring` classes for keyboard navigation.
 **Action:** When adding or reviewing modal components with icon-only close buttons, always verify that they include an `aria-label` (using translation strings like `t('common.cancel')`) and the standard `ds-focus-ring` class.
+## 2026-10-25 - Adding aria-labels to action table icons
+**Learning:** Found an accessibility pattern across the application where icon-only action buttons (Edit, View, Delete) in tables rely exclusively on the HTML `title` attribute without an `aria-label` for screen readers.
+**Action:** When creating or reviewing components with icon-only actions (buttons or links), always add an `aria-label` mapped to a translated string (e.g., `t('common.edit')`) even if a `title` attribute is present.

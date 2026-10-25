@@ -273,9 +273,9 @@ const fieldError = 'mt-1 text-xs text-status-danger';
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('webhooks.show', webhook.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('settings.webhooks.viewDetails')"><Eye :size="16" /></Link>
-                                <button @click="openEditModal(webhook)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('common.edit')"><Pencil :size="16" /></button>
-                                <button @click="deleteWebhook(webhook)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :title="t('common.delete')"><Trash2 :size="16" /></button>
+                                <Link :href="route('webhooks.show', webhook.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('settings.webhooks.viewDetails')" :aria-label="t('settings.webhooks.viewDetails')"><Eye :size="16" /></Link>
+                                <button @click="openEditModal(webhook)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('common.edit')" :aria-label="t('common.edit')"><Pencil :size="16" /></button>
+                                <button @click="deleteWebhook(webhook)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :title="t('common.delete')" :aria-label="t('common.delete')"><Trash2 :size="16" /></button>
                             </div>
                         </td>
                     </tr>

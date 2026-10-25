@@ -138,10 +138,10 @@ const thClass =
                         </td>
                         <td class="px-4 py-3">
                             <div class="flex items-center justify-end gap-1">
-                                <Link :href="route('reports.builder.show', report.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('reportBuilder.actions.view')"><Eye :size="16" /></Link>
-                                <Link v-if="report.is_owner" :href="route('reports.builder.edit', report.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('reportBuilder.actions.edit')"><Pencil :size="16" /></Link>
-                                <button @click="exportReport(report)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('reportBuilder.actions.export')"><Download :size="16" /></button>
-                                <button v-if="report.is_owner" @click="deleteReport(report)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :title="t('reportBuilder.actions.delete')"><Trash2 :size="16" /></button>
+                                <Link :href="route('reports.builder.show', report.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('reportBuilder.actions.view')" :aria-label="t('reportBuilder.actions.view')"><Eye :size="16" /></Link>
+                                <Link v-if="report.is_owner" :href="route('reports.builder.edit', report.id)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-success" :title="t('reportBuilder.actions.edit')" :aria-label="t('reportBuilder.actions.edit')"><Pencil :size="16" /></Link>
+                                <button @click="exportReport(report)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-brand" :title="t('reportBuilder.actions.export')" :aria-label="t('reportBuilder.actions.export')"><Download :size="16" /></button>
+                                <button v-if="report.is_owner" @click="deleteReport(report)" class="rounded-md p-1.5 text-text-tertiary transition-colors hover:bg-surface-overlay hover:text-status-danger" :title="t('reportBuilder.actions.delete')" :aria-label="t('reportBuilder.actions.delete')"><Trash2 :size="16" /></button>
                             </div>
                         </td>
                     </tr>
