@@ -169,7 +169,8 @@ class PermissionSetController extends Controller
         }
 
         // Check if any roles are using this set
-        if ($permissionSet->roles()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($permissionSet->roles()->exists()) {
             return response()->json([
                 'message' => 'Cannot delete permission set: it is currently assigned to roles',
             ], 422);

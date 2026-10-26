@@ -118,7 +118,8 @@ class ProductCategoryController extends Controller
         }
 
         // Check if category has products
-        if ($category->products()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($category->products()->exists()) {
             return redirect()->back()
                 ->withErrors(['category' => 'Cannot delete category with associated products.']);
         }

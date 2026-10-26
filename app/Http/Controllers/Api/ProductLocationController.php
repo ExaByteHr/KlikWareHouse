@@ -153,7 +153,8 @@ class ProductLocationController extends Controller
         app(WarehouseAccessService::class)->authorizeLocation($request->user(), $location);
 
         // Check if location has products
-        if ($location->products()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($location->products()->exists()) {
             return response()->json([
                 'message' => 'Cannot delete location with associated products',
                 'error' => 'has_products',

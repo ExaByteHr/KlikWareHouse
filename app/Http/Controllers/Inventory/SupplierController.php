@@ -220,7 +220,8 @@ class SupplierController extends Controller
         }
 
         // Check if supplier has associated products
-        if ($supplier->products()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($supplier->products()->exists()) {
             if ($request->wantsJson()) {
                 return response()->json([
                     'message' => 'Cannot delete supplier with associated products.',
