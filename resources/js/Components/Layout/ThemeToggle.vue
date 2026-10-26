@@ -24,8 +24,9 @@ onBeforeUnmount(() => stopFollowing());
 <template>
     <button
         @click="toggleTheme"
-        class="p-2 text-gray-500 hover:text-brand dark:text-slate-400 dark:hover:text-brand hover:bg-gray-100 dark:hover:bg-surface-raised rounded-lg transition"
+        class="p-2 text-gray-500 hover:text-brand dark:text-slate-400 dark:hover:text-brand hover:bg-gray-100 dark:hover:bg-surface-raised rounded-lg transition ds-focus-ring"
         :title="isDark ? t('components.themeToggle.switchToLight') : t('components.themeToggle.switchToDark')"
+        :aria-label="isDark ? t('components.themeToggle.switchToLight') : t('components.themeToggle.switchToDark')"
     >
         <!-- Sun icon (shown when IN dark mode) -->
         <svg v-if="isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
