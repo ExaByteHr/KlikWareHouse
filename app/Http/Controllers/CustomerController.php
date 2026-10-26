@@ -189,7 +189,8 @@ class CustomerController extends Controller
         }
 
         // Check if customer has associated orders
-        if ($customer->orders()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($customer->orders()->exists()) {
             if ($request->wantsJson()) {
                 return response()->json([
                     'message' => 'Cannot delete customer with associated orders.',

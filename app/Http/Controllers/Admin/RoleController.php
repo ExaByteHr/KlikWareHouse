@@ -302,7 +302,8 @@ class RoleController extends Controller
         }
 
         // Check if role is assigned to any users
-        if ($role->users()->count() > 0) {
+        // Use exists() instead of count() > 0 for performance (SELECT EXISTS vs SELECT COUNT(*))
+        if ($role->users()->exists()) {
             return redirect()->back()
                 ->withErrors(['role' => 'Cannot delete a role that is assigned to users. Please reassign users first.']);
         }

@@ -4,3 +4,6 @@
 ## 2026-10-16 - Eager Loaded Relationships Masking Aggregation Needs
 **Learning:** In Laravel/Inertia applications, developers sometimes unconditionally eager-load entire `HasMany` relationships into memory just to calculate derived statistics (like `reduce` for total sums or `.length` for counts) on the frontend. If the UI only lists a small subset (e.g., 5 items) but the relationship can grow infinitely (like a customer's `orders`), this causes a hidden O(n) memory and data-transfer bottleneck.
 **Action:** Always check `fn ($query) => $query->latest()->limit(N)` patterns. If the frontend consumes more items for aggregation than the limit allows, switch to database-level aggregations (`loadCount`, `loadSum`) and keep the `limit(N)` strictly for display models to cap memory usage to O(1).
+## 2026-10-18 - Optimize Related Model Existence Checks
+**Learning:** In Laravel Eloquent, using `$relation->count() > 0` to check for the existence of related models (e.g., before allowing deletion) executes a `SELECT COUNT(*)` query, which scans all matching rows.
+**Action:** Replace `$relation->count() > 0` with `$relation->exists()`. This executes a `SELECT EXISTS(SELECT 1 ...)` query, which allows the database to short-circuit and stop searching as soon as it finds the first matching row, improving performance especially on large datasets.
