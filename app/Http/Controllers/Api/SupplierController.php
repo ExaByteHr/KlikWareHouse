@@ -136,7 +136,7 @@ class SupplierController extends Controller
         }
 
         // Check if supplier has products
-        if ($supplier->products()->count() > 0) {
+        if ($supplier->products()->exists()) {
             return response()->json([
                 'message' => 'Cannot delete supplier with associated products',
                 'error' => 'has_products',
