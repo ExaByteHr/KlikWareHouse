@@ -379,7 +379,7 @@ class PurchaseOrder extends Model
         return $this->status === self::STATUS_DRAFT
             && in_array($this->approval_status, [null, self::APPROVAL_REJECTED], true)
             && $this->needsApproval()
-            && $this->items()->count() > 0;
+            && $this->items()->exists();
     }
 
     /**
@@ -405,7 +405,7 @@ class PurchaseOrder extends Model
         }
 
         return $this->status === self::STATUS_DRAFT
-            && $this->items()->count() > 0
+            && $this->items()->exists()
             && ! $this->awaitsApproval();
     }
 

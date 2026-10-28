@@ -65,7 +65,7 @@ class ProductResource extends JsonResource
                 'minimum_order_quantity' => $supplier->pivot->minimum_order_quantity,
                 'is_primary' => (bool) $supplier->pivot->is_primary,
             ])->values()),
-            'variants_count' => $this->when($this->has_variants, $this->variants()->count()),
+            'variants_count' => $this->when($this->has_variants, fn () => $this->relationLoaded('variants') ? $this->variants->count() : $this->variants()->count()),
             'created_at' => $this->created_at?->toIso8601String(),
             'updated_at' => $this->updated_at?->toIso8601String(),
         ];

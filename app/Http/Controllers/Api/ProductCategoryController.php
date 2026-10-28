@@ -142,7 +142,7 @@ class ProductCategoryController extends Controller
         }
 
         // Check if category has products
-        if ($category->products()->count() > 0) {
+        if ($category->products()->exists()) {
             return response()->json([
                 'message' => 'Cannot delete category with associated products',
                 'error' => 'has_products',
