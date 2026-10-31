@@ -7,3 +7,6 @@
 ## 2024-05-18 - Added focus states and aria labels to modal close buttons
 **Learning:** Found an accessibility issue pattern where modal close buttons with only an `<X />` icon were missing `aria-label` attributes for screen readers and `ds-focus-ring` classes for keyboard navigation.
 **Action:** When adding or reviewing modal components with icon-only close buttons, always verify that they include an `aria-label` (using translation strings like `t('common.cancel')`) and the standard `ds-focus-ring` class.
+## 2024-05-24 - Dropdown Accessibility and Dashboard Bug Fix
+**Learning:** Found that custom dropdown toggles (`WarehouseSwitcher` and `NotificationDropdown`) were missing `aria-expanded` attributes. A syntax error was also found in `Dashboard.vue` where mixing `??` and `||` without parentheses was failing the build.
+**Action:** When adding or reviewing dropdown components, always verify that the toggle buttons use `aria-expanded` reflecting the open/close state. For Vue templates, remember to use parentheses when mixing logical operators `??` and `||`.
