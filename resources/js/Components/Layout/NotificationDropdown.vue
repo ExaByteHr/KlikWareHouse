@@ -119,7 +119,8 @@ defineExpose({ closeDropdown });
     <div class="sm:relative">
         <button
             @click="toggleNotifications"
-            class="relative p-2 text-gray-500 hover:text-brand dark:text-slate-400 dark:hover:text-brand hover:bg-gray-100 dark:hover:bg-surface-raised rounded-lg transition"
+            :aria-expanded="notificationsOpen"
+            class="relative p-2 text-gray-500 hover:text-brand dark:text-slate-400 dark:hover:text-brand hover:bg-gray-100 dark:hover:bg-surface-raised rounded-lg transition ds-focus-ring"
             :title="t('nav.notifications')"
         >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,7 +147,7 @@ defineExpose({ closeDropdown });
                     <button
                         v-if="unreadCount > 0"
                         @click="markAllAsRead"
-                        class="text-xs text-brand dark:text-brand hover:text-brand dark:hover:text-brand font-medium"
+                        class="text-xs text-brand dark:text-brand hover:text-brand dark:hover:text-brand font-medium ds-focus-ring rounded-sm"
                     >
                         {{ t('notifications.markAllRead') }}
                     </button>
@@ -181,7 +182,7 @@ defineExpose({ closeDropdown });
                     v-for="notification in notifications"
                     :key="notification.id"
                     @click="markAsRead(notification)"
-                    class="w-full flex items-start gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-slate-800/50 transition border-b border-gray-50 dark:border-border-subtle last:border-b-0 text-left"
+                    class="w-full flex items-start gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-slate-800/50 transition border-b border-gray-50 dark:border-border-subtle last:border-b-0 text-left ds-focus-ring"
                 >
                     <div :class="['flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center', getTypeColor(notification.type)]">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
