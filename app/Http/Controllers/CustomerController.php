@@ -189,7 +189,7 @@ class CustomerController extends Controller
         }
 
         // Check if customer has associated orders
-        if ($customer->orders()->count() > 0) {
+        if ($customer->orders()->exists()) {
             if ($request->wantsJson()) {
                 return response()->json([
                     'message' => 'Cannot delete customer with associated orders.',

@@ -152,7 +152,7 @@ class ProductLocationController extends Controller
         $this->warehouseAccess->authorizeLocation($request->user(), $location);
 
         // Check if location has products (as their primary location)
-        if ($location->products()->count() > 0) {
+        if ($location->products()->exists()) {
             return redirect()->back()
                 ->withErrors(['location' => 'Cannot delete location with associated products.']);
         }
