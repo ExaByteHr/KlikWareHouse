@@ -118,7 +118,7 @@ class ProductCategoryController extends Controller
         }
 
         // Check if category has products
-        if ($category->products()->count() > 0) {
+        if ($category->products()->exists()) {
             return redirect()->back()
                 ->withErrors(['category' => 'Cannot delete category with associated products.']);
         }
