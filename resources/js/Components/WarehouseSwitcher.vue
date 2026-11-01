@@ -55,7 +55,8 @@ onUnmounted(() => {
             @click="toggleDropdown"
             :aria-label="buttonLabel"
             :title="buttonLabel"
-            class="flex items-center gap-1 lg:gap-2 px-2 lg:px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand hover:bg-gray-100 dark:hover:text-brand dark:hover:bg-surface-raised rounded-lg transition"
+            :aria-expanded="isOpen"
+            class="flex items-center gap-1 lg:gap-2 px-2 lg:px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand hover:bg-gray-100 dark:hover:text-brand dark:hover:bg-surface-raised rounded-lg transition ds-focus-ring"
         >
             <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
